@@ -52,5 +52,57 @@
         "value": false
       }
     ]
+  },
+  {
+    "name": "Was beschreibt ein zentrales VCS am Besten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Projekte nur online verfügbar",
+        "value": true
+      },
+      {
+        "text": "Dateien zum Bearbeiten sperren",
+        "value": true
+      },
+      {
+        "text": "Lokal nur meine Version, ohne Verbindung zur Serverversion",
+        "value": true
+      },
+      {
+        "text": "Pro Client ein lokales \"komplettes\" Repository Backup",
+        "value": false
+      },
+      {
+        "text": "Mehrere entfernte Repositories möglich",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was beschreibt ein dezentrales VCS am Besten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Projekte nur online verfügbar",
+        "value": false
+      },
+      {
+        "text": "Dateien zum Bearbeiten sperren",
+        "value": false
+      },
+      {
+        "text": "Lokal nur meine Version, ohne Verbindung zur Serverversion",
+        "value": false
+      },
+      {
+        "text": "Pro Client ein lokales \"komplettes\" Repository Backup",
+        "value": true
+      },
+      {
+        "text": "Mehrere entfernte Repositories möglich",
+        "value": true
+      }
+    ]
   }
 ]

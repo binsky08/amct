@@ -11,14 +11,15 @@
 
         <ul *ngIf="question.type == 'checkbox'">
           <li *ngFor="let answer of question.answers; let j = index" class="example-margin">
-            <mat-checkbox [(ngModel)]="questions[i].answers[j].answer">
+            <mat-checkbox [(ngModel)]="checkboxAnswers[i][j]"
+                          [style]="showSolution ? (checkCheckboxSolution(questions[i], answer, i, j) ? 'color: green' : 'color: red') : ''">
               {{answer.text}}
             </mat-checkbox>
           </li>
         </ul>
-        <mat-radio-group *ngIf="question.type == 'radio'" [(ngModel)]="answers[i]">
+        <mat-radio-group *ngIf="question.type == 'radio'" [(ngModel)]="radioAnswers[i]">
           <mat-radio-button *ngFor="let answer of question.answers; let j = index" [value]="answer.text"
-                            [style]="showSolution ? (checkSolution(questions[i], answer, i) ? 'color: green' : 'color: red') : ''">
+                            [style]="showSolution ? (checkRadioSolution(questions[i], answer, i) ? 'color: green' : 'color: red') : ''">
             {{answer.text}}
           </mat-radio-button>
         </mat-radio-group>

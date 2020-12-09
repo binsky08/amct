@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
   private questionURL = 'assets/questions.json';
   title: string;
   questions: [IQuestion];
-  answers: [string];
+  radioAnswers: [string];
+  checkboxAnswers: [[boolean]];
   showSolution = false;
   rightAnswers: number;
   possibleAnswersCounter: number;
@@ -30,9 +31,14 @@ export class HomeComponent implements OnInit {
       this.title = config.config.title;
       config.getJSON(this.questionURL).subscribe(data => {
         this.questions = data;
-        this.answers = [''];
+        this.radioAnswers = [''];
+        this.checkboxAnswers = [[false]];
         for (let i = 0; i < data.length; i++) {
-          this.answers[i] = '';
+          this.radioAnswers[i] = '';
+          this.checkboxAnswers[i] = [false];
+          for (let k = 0; k < data[i].answers.length; k++) {
+            this.checkboxAnswers[i][k] = false;
+          }
         }
         // console.log(this.answers);
       });
@@ -54,8 +60,17 @@ export class HomeComponent implements OnInit {
       const question = this.questions[i];
       if (question.type === 'radio') {
         this.possibleAnswersCounter++;
-        if (this.answers[i] === this.getRightRadioAnswer(question.answers)) {
+        if (this.radioAnswers[i] === this.getRightRadioAnswer(question.answers)) {
           this.rightAnswers++;
+        }
+      }
+      if (question.type === 'checkbox') {
+        for (let j = 0; j < question.answers.length; j++) {
+          this.possibleAnswersCounter++;
+          if (this.checkboxAnswers[i][j] && question.answers[j].value ||
+            !this.checkboxAnswers[i][j] && !question.answers[j].value) {
+            this.rightAnswers++;
+          }
         }
       }
     }
@@ -69,7 +84,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  checkSolution(question: IQuestion, answer: IAnswer, id: number): boolean {
-    return answer.value && this.answers[id] === answer.text || (!answer.value && this.answers[id] !== answer.text);
+  checkRadioSolution(question: IQuestion, answer: IAnswer, id: number): boolean {
+    return answer.value && this.radioAnswers[id] === answer.text || (!answer.value && this.radioAnswers[id] !== answer.text);
+  }
+
+  checkCheckboxSolution(question: IQuestion, answer: IAnswer, id: number, innerId: number): boolean {
+    return answer.value && this.checkboxAnswers[id][innerId] ||
+      (!answer.value && !this.checkboxAnswers[id][innerId]);
   }
 }
