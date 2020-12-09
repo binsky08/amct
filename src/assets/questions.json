@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Mit welchem Befehl können Sie den lokalen Branch \"test\" ohne Nachfrage löschen, wenn Sie sich im Branch \"test\" befinden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "git branch -d test",
+        "value": false
+      },
+      {
+        "text": "git branch -D test",
+        "value": false
+      },
+      {
+        "text": "Mit keinem dieser Befehle",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Befehl können Sie den lokalen Branch \"test\" ohne Nachfrage löschen, wenn Sie sich im Branch \"main\" befinden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "git branch -d test",
+        "value": false
+      },
+      {
+        "text": "git branch -D test",
+        "value": true
+      },
+      {
+        "text": "Mit keinem dieser Befehle",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Befehl kann man den remote Branch \"test\" löschen?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "git branch -d test",
+        "value": false
+      },
+      {
+        "text": "git push origin --delete test",
+        "value": true
+      },
+      {
+        "text": "Mit keinem dieser Befehle",
+        "value": false
+      }
+    ]
+  }
+]

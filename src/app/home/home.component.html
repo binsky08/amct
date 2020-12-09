@@ -1,0 +1,41 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+  <div fxFlexAlign="center">
+    <p>{{title}}</p>
+  </div>
+  <mat-card>
+    <div *ngFor="let question of questions; let i = index">
+      <mat-card-content>
+        <h3>
+          {{question.name}}
+        </h3>
+
+        <ul *ngIf="question.type == 'checkbox'">
+          <li *ngFor="let answer of question.answers; let j = index" class="example-margin">
+            <mat-checkbox [(ngModel)]="questions[i].answers[j].answer">
+              {{answer.text}}
+            </mat-checkbox>
+          </li>
+        </ul>
+        <mat-radio-group *ngIf="question.type == 'radio'" [(ngModel)]="answers[i]">
+          <mat-radio-button *ngFor="let answer of question.answers; let j = index" [value]="answer.text"
+                            [style]="showSolution ? (checkSolution(questions[i], answer, i) ? 'color: green' : 'color: red') : ''">
+            {{answer.text}}
+          </mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+      <hr *ngIf="i < questions.length-1" class="mat-card-hr">
+    </div>
+  </mat-card>
+
+  <mat-card class="margin-top-20">
+    <span style="float: left">
+      <button mat-raised-button color="primary" (click)="solve()" class="abgeben-button">
+        Prüfen
+      </button>
+    </span>
+    <span style="float: right; margin-left: 10px; margin-top: 10px;" *ngIf="showSolution">
+      {{rightAnswers}} von {{possibleAnswersCounter}} Antworten sind richtig!
+    </span>
+  </mat-card>
+
+</section>
