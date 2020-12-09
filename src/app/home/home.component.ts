@@ -13,12 +13,15 @@ export class HomeComponent implements OnInit {
 
   private questionURL = 'assets/questions.json';
   title: string;
+  questionPool: [IQuestion];
   questions: [IQuestion];
   radioAnswers: [string];
   checkboxAnswers: [[boolean]];
   showSolution = false;
   rightAnswers: number;
   possibleAnswersCounter: number;
+  startTest = false;
+  numberOfRandomQuestions: number;
 
   constructor(private http: HttpClient, private config: ConfigService) {
     (async () => {
@@ -29,20 +32,47 @@ export class HomeComponent implements OnInit {
         }
       }
       this.title = config.config.title;
+      this.numberOfRandomQuestions = config.config.numberOfRandomQuestions;
       config.getJSON(this.questionURL).subscribe(data => {
-        this.questions = data;
-        this.radioAnswers = [''];
-        this.checkboxAnswers = [[false]];
-        for (let i = 0; i < data.length; i++) {
-          this.radioAnswers[i] = '';
-          this.checkboxAnswers[i] = [false];
-          for (let k = 0; k < data[i].answers.length; k++) {
-            this.checkboxAnswers[i][k] = false;
-          }
-        }
-        // console.log(this.answers);
+        this.questionPool = data;
       });
     })();
+  }
+
+  startWithRandom(num: number): void {
+    const randomNumbers = [];
+    const selectedQuestions = [];
+    if (num > this.questionPool.length) {
+      num = this.questionPool.length;
+    }
+    for (let i = 0; i < num; i++) {
+      const rand = Math.floor(Math.random() * this.questionPool.length);
+      if (randomNumbers.includes(rand)) {
+        i--;
+        continue;
+      }
+      randomNumbers.push(rand);
+      selectedQuestions.push(this.questionPool[rand]);
+    }
+    this.initiateQuestions(selectedQuestions);
+  }
+
+  startWithAll(): void {
+    this.initiateQuestions(this.questionPool);
+  }
+
+  initiateQuestions(questions): void {
+    this.questions = questions;
+    this.radioAnswers = [''];
+    this.checkboxAnswers = [[false]];
+    for (let i = 0; i < questions.length; i++) {
+      this.radioAnswers[i] = '';
+      this.checkboxAnswers[i] = [false];
+      for (let k = 0; k < questions[i].answers.length; k++) {
+        this.checkboxAnswers[i][k] = false;
+      }
+    }
+    this.startTest = true;
   }
 
   delay(ms: number): Promise<any> {

@@ -2,7 +2,19 @@
   <div fxFlexAlign="center">
     <p>{{title}}</p>
   </div>
-  <mat-card>
+  <mat-card *ngIf="!startTest && !questionPool" style="text-align: center;">
+    Loading ...
+  </mat-card>
+  <mat-card *ngIf="!startTest && questionPool" style="text-align: center;">
+    <button mat-raised-button color="basic" (click)="startWithRandom(numberOfRandomQuestions)"
+            class="question-selector-button margin-right-10">
+      Starte mit {{numberOfRandomQuestions}} zufälligen Fragen
+    </button>
+    <button mat-raised-button color="basic" (click)="startWithAll()" class="question-selector-button">
+      Starte mit allen verfügbaren Fragen
+    </button>
+  </mat-card>
+  <mat-card *ngIf="startTest">
     <div *ngFor="let question of questions; let i = index">
       <mat-card-content>
         <h3>
@@ -28,7 +40,7 @@
     </div>
   </mat-card>
 
-  <mat-card class="margin-top-20">
+  <mat-card class="margin-top-20" *ngIf="startTest">
     <span style="float: left">
       <button mat-raised-button color="primary" (click)="solve()" class="abgeben-button">
         Prüfen
