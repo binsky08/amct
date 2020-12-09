@@ -1,5 +1,49 @@
 [
   {
+    "name": "Was trifft am ehesten auf den checkout Befehl in git zu?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugt Vormerkungen für den Commit",
+        "value": false
+      },
+      {
+        "text": "Projekt Snapshot zu einem bestimmten Zeitpunkt",
+        "value": false
+      },
+      {
+        "text": "Zwischen Branches im Arbeitsordner wechseln",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchen der folgenden Kommandos kann man ganze Zeilen löschen, wenn man sich im vim Command-Mode befindet?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "dd",
+        "value": true
+      },
+      {
+        "text": "d/",
+        "value": false
+      },
+      {
+        "text": "d3d",
+        "value": true
+      },
+      {
+        "text": "dw",
+        "value": false
+      },
+      {
+        "text": "5d",
+        "value": false
+      }
+    ]
+  },
+  {
     "name": "Mit welchem Befehl können Sie den lokalen Branch \"test\" ohne Nachfrage löschen, wenn Sie sich im Branch \"test\" befinden?",
     "type": "radio",
     "answers": [
@@ -80,6 +124,28 @@
     ]
   },
   {
+    "name": "Mit welchem Befehl kann man den letzten git Commit bearbeiten?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "git commit --amend",
+        "value": true
+      },
+      {
+        "text": "git reset HEAD",
+        "value": false
+      },
+      {
+        "text": "git checkout --commit 1",
+        "value": false
+      },
+      {
+        "text": "Mit keinem dieser Befehle",
+        "value": false
+      }
+    ]
+  },
+  {
     "name": "Was beschreibt ein dezentrales VCS am Besten?",
     "type": "checkbox",
     "answers": [
@@ -88,8 +154,8 @@
         "value": false
       },
       {
-        "text": "Dateien zum Bearbeiten sperren",
-        "value": false
+        "text": "Dateien müssen zum Bearbeiten nicht gesperrt werden",
+        "value": true
       },
       {
         "text": "Lokal nur meine Version, ohne Verbindung zur Serverversion",
@@ -101,6 +167,398 @@
       },
       {
         "text": "Mehrere entfernte Repositories möglich",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was zeichnet einen \"guten\" Commit aus?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Nachricht im Imperativ und in Englisch",
+        "value": true
+      },
+      {
+        "text": "Sollte sensible Daten enthalten",
+        "value": false
+      },
+      {
+        "text": "Sollte automatisch erzeugte Dateien enthalten (z.B. .class Dateien)",
+        "value": false
+      },
+      {
+        "text": "Sollte keine online verfügbaren Ressourcen enthalten",
+        "value": true
+      },
+      {
+        "text": "Nur inhaltlich zusammenhängende Änderungen",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was sollte man beim git rebase beachten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Commit-Hashes können sich ändern",
+        "value": true
+      },
+      {
+        "text": "Kann mit mehreren Benutzern kompliziert werden",
+        "value": true
+      },
+      {
+        "text": "Ist einem Commit vorzuziehen",
+        "value": false
+      },
+      {
+        "text": "Nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wähle mögliche git rebase Optionen:",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "pick",
+        "value": true
+      },
+      {
+        "text": "reword",
+        "value": true
+      },
+      {
+        "text": "commit",
+        "value": false
+      },
+      {
+        "text": "squash",
+        "value": true
+      },
+      {
+        "text": "exec",
+        "value": true
+      },
+      {
+        "text": "hard",
+        "value": false
+      },
+      {
+        "text": "push",
+        "value": false
+      },
+      {
+        "text": "head",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was macht \"git cherry-pick 7549431c\"?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Zieht den Commit 7549431c aus dem aktuellen Branch an die oberste Position",
+        "value": false
+      },
+      {
+        "text": "Holt den Commit 7549431c aus einem beliebigen Branch",
+        "value": true
+      },
+      {
+        "text": "Nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was macht \"git reset HEAD~1 --mixed\"?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Ändert keine Dateien, Differenzen kommen für einen Fix-Commit in die Staging Area",
+        "value": false
+      },
+      {
+        "text": "Alles wird komplett mit den Änderungen aus dem angegebenen Commit überschrieben, Änderungen kommen nicht in die Staging Area",
+        "value": false
+      },
+      {
+        "text": "Dateien mit manuellen Änderungen werden nicht editiert, Änderungen kommen nicht in die Staging Area",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was beschreibt den \"Feature Branch Workflow\"?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "1 Branch pro Feature (z.B. feature-xy)",
+        "value": true
+      },
+      {
+        "text": "Der development Branch ist der Hauptbranch und enthält alle Zusammenführungen bis zum nächsten Release",
+        "value": false
+      },
+      {
+        "text": "Für jedes Release wird ein extra Branch angelegt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was tut ein \"git stash\"?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugt Markierungen im Repo, z.B. für Releases",
+        "value": false
+      },
+      {
+        "text": "Kopiert nicht der Staging Area hinzugefügte Änderungen in ein \"virtuelles git-Clipboard\"",
+        "value": true
+      },
+      {
+        "text": "Holt die letzten Änderungen zurück ins aktuelle Arbeitsverzeichnis",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der folgenden Kommandos sind theoretisch valide git Kommandos?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "git blame README.md",
+        "value": true
+      },
+      {
+        "text": "git add --patch",
+        "value": true
+      },
+      {
+        "text": "git bisect start HEAD HEAD~9",
+        "value": true
+      },
+      {
+        "text": "git reset HEAD~1",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Punkte hört man auch im Zusammenhang mit agiler Softwareentwicklung?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Über Unsicherheiten reden",
+        "value": true
+      },
+      {
+        "text": "Einfache Lösungen gehen vor Komplexität",
+        "value": true
+      },
+      {
+        "text": "Kein Spielraum für neue Erkenntnisse",
+        "value": false
+      },
+      {
+        "text": "Einhalten von Fristen durch Überstunden oder kurzfristig mehr Programmierer",
+        "value": false
+      },
+      {
+        "text": "Kein festes Ziel (inkrementelle Verbesserung)",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wann funktionieren Methoden des Agilen Manifest nicht?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Mit langfristig geplanten Budgets",
+        "value": false
+      },
+      {
+        "text": "Mit kurzfristig geplanten Budgets",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was ist die ideale Größe eines Scrum Teams?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "2-3 Personen",
+        "value": false
+      },
+      {
+        "text": "5-9 Personen",
+        "value": true
+      },
+      {
+        "text": "12-15 Personen",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Rollen finden sich bei Scrum wieder?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Scrum Owner",
+        "value": false
+      },
+      {
+        "text": "Scrum Master",
+        "value": true
+      },
+      {
+        "text": "Entwickler",
+        "value": true
+      },
+      {
+        "text": "Stakeholder",
+        "value": true
+      },
+      {
+        "text": "Cheeseholder",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was ist beim Sprint Planning zu tun?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Formulierung des Projektziels",
+        "value": true
+      },
+      {
+        "text": "Merge von fertiggestellten Features",
+        "value": false
+      },
+      {
+        "text": "Nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Beschreibungen von Artefakten in Zusammenhang mit Scrum sind zutreffend?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Das Product Backlog enthält eine Liste von Dingen, um das Produkt zu verbessern",
+        "value": true
+      },
+      {
+        "text": "Das Sprint Backlog enthält nur Elemente aus dem Product Backlog",
+        "value": true
+      },
+      {
+        "text": "Das Sprint Backlog wird nur vom Scrum Master gestaltet",
+        "value": false
+      },
+      {
+        "text": "Ein Inkrement sollte gut getestet sein",
+        "value": true
+      },
+      {
+        "text": "Ein Inkrement enthält nur als fertig anerkannte Produktteile",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf User Stories zu?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "... enthalten Akzeptanzkriterien",
+        "value": true
+      },
+      {
+        "text": "... sind immer zu groß für nur einen Sprint",
+        "value": false
+      },
+      {
+        "text": "... haben typische Spalten: todo, in progress, done",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf ein Scrum Board / Sprint Board zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ein Kanban Board wird zur Visualisierung der Arbeit genutzt",
+        "value": true
+      },
+      {
+        "text": "Typische Spalten: todo, in progress, done",
+        "value": true
+      },
+      {
+        "text": "Soll die Illusion nehmen, dass man die benötigte Zeit genau abschätzen kann",
+        "value": false
+      },
+      {
+        "text": "Wird regelmäßig aktualisiert",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Kanban zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Darf nicht zusammen mit Scrum genutzt werden",
+        "value": false
+      },
+      {
+        "text": "Visualisiert Stapel im Arbeitsprozess",
+        "value": true
+      },
+      {
+        "text": "Optimierung des Durchflusses in einem Arbeitssystem",
+        "value": true
+      },
+      {
+        "text": "Enthält kurze Berichte jedes Teammitglieds zur letzten Arbeitsperiode",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf DevOps zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Trennt festgefahrene Strukturen bei der Softwareentwicklung auf",
+        "value": true
+      },
+      {
+        "text": "Codeanalyse wird durch speziell für Tests ausgebildete Mitarbeiter durchgeführt",
+        "value": false
+      },
+      {
+        "text": "Implementiert CI/CD",
+        "value": true
+      },
+      {
+        "text": "Automatisches Code-Linting z.B. mit GitHub Actions",
         "value": true
       }
     ]
