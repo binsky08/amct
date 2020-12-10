@@ -122,4 +122,14 @@ export class HomeComponent implements OnInit {
     return answer.value && this.checkboxAnswers[id][innerId] ||
       (!answer.value && !this.checkboxAnswers[id][innerId]);
   }
+
+  reset(): void {
+    this.startTest = false;
+    this.showSolution = false;
+    this.rightAnswers = undefined;
+    this.possibleAnswersCounter = undefined;
+    this.questions = undefined;
+    this.radioAnswers = undefined;
+    this.checkboxAnswers = undefined;
+  }
 }

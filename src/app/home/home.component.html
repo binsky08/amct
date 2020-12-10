@@ -45,6 +45,9 @@
       <button mat-raised-button color="primary" (click)="solve()" class="abgeben-button">
         Prüfen
       </button>
+      <button mat-raised-button color="basic" (click)="reset()" class="abgeben-button margin-left-10" *ngIf="showSolution">
+        Reset
+      </button>
     </span>
     <span style="float: right; margin-left: 10px; margin-top: 10px;" *ngIf="showSolution">
       {{rightAnswers}} von {{possibleAnswersCounter}} Antworten sind richtig!
