@@ -1,27 +1,71 @@
 # Amct
 
+_An angular based multiple choice test framework_
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Question format
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+There are already two possible question formats:
 
-## Running end-to-end tests
+### Single selection
+- use the keywork "radio" as type in question.json
+- only one value of all possible answers is allowed to be true
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Multiple selection
+- use the keywork "checkbox" as type in question.json
+- answers can be mixed, all true or all false
 
-## Further help
+Example of two different question definitions in `assets/questions.json`:
+```
+[
+  {
+    "name": "What is 1+1?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "0",
+        "value": false
+      },
+      {
+        "text": "1",
+        "value": false
+      },
+      {
+        "text": "2",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Select all words, starting with a \"d\".",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "dumb",
+        "value": true
+      },
+      {
+        "text": "definitely",
+        "value": true
+      },
+      {
+        "text": "teacher",
+        "value": false
+      }
+    ]
+  }
+]
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Online example
+
+Visit https://amct.binsky.org to see a working example
