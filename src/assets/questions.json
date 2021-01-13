@@ -441,7 +441,7 @@
     "answers": [
       {
         "text": "Formulierung des Projektziels",
-        "value": true
+        "value": false
       },
       {
         "text": "Merge von fertiggestellten Features",
@@ -449,7 +449,7 @@
       },
       {
         "text": "Nichts davon",
-        "value": false
+        "value": true
       }
     ]
   },
