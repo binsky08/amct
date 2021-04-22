@@ -1,5 +1,6 @@
+import { ITestConfig } from './ITestConfig';
+
 export interface IConfig {
   title: string;
-  pageTitle: string;
-  numberOfRandomQuestions: number;
+  tests: [ITestConfig];
 }

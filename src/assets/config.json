@@ -1,5 +1,11 @@
 {
-  "title": "Programmiermethoden und Werkzeuge - Vorübung",
-  "pageTitle": "Angular Multiple Choice Test",
-  "numberOfRandomQuestions": 5
+  "title": "Angular Multiple Choice Test - Complete Collection",
+  "tests": [
+    {
+      "title": "Programmiermethoden und Werkzeuge - Vorübung",
+      "questions": "assets/progmeth1.json",
+      "numberOfRandomQuestions": 5,
+      "uniqueIdentifier": "progmeth1"
+    }
+  ]
 }

@@ -13,7 +13,7 @@ export class ConfigService {
   constructor(private http: HttpClient) {
     this.getJSON(this.configURL).subscribe(data => {
       this.config = data;
-      document.title = this.config.pageTitle;
+      document.title = this.config.title;
     });
   }
 

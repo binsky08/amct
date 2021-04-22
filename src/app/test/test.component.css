@@ -1,0 +1,27 @@
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+  padding-left: 7px;
+}
+
+.mat-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.mat-radio-button {
+  margin: 5px;
+}
+
+.abgeben-button {
+  width: 100px;
+}
+
+.question-selector-button {
+  width: auto;
+}
+
+button[mat-raised-button] {
+  margin-right: 1em;
+}
