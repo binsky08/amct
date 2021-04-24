@@ -106,8 +106,9 @@ export class TestComponent implements OnInit {
     this.checkboxAnswers = [[false]];
     for (let i = 0; i < questions.length; i++) {
       if (this.questions[i].type === 'dropList') {
-        const tmpQuestion = JSON.parse(JSON.stringify(this.questions[i]));  // clone array
+        const tmpQuestion: IQuestion = JSON.parse(JSON.stringify(this.questions[i]));  // clone array
         tmpQuestion.id = i;
+        tmpQuestion.answers = this.randomizeAnswers(tmpQuestion.answers);
         this.dropListSource.push(tmpQuestion);
       } else {
         this.radioAnswers[i] = '';
@@ -118,6 +119,18 @@ export class TestComponent implements OnInit {
       }
     }
     this.startTest = true;
+  }
+
+  randomizeAnswers(entryArray: [IAnswer]): [IAnswer] {
+    const originalArray = JSON.parse(JSON.stringify(entryArray));
+    // @ts-ignore
+    const newArray: [IAnswer] = [];
+    while (originalArray.length !== 0) {
+      const randomIndex = Math.floor(Math.random() * originalArray.length);
+      newArray.push(originalArray[randomIndex]);
+      originalArray.splice(randomIndex, 1);
+    }
+    return newArray;
   }
 
   delay(ms: number): Promise<any> {
