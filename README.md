@@ -40,17 +40,24 @@ Example:
 
 ## Question format
 
-There are already two possible question formats:
+There are already three possible question formats:
 
 ### Single selection
-- use the keywork "radio" as type in myQuestionnaire.json
+- use the value `radio` as type in myQuestionnaire.json
 - only one value of all possible answers is allowed to be true
 
 ### Multiple selection
-- use the keywork "checkbox" as type in myQuestionnaire.json
+- use the value `checkbox` as type in myQuestionnaire.json
 - answers can be mixed, all true or all false
 
-Example of two different question definitions in `assets/myQuestionnaire.json`:
+### Drop lists
+- use the value `dropList` as type in myQuestionnaire.json
+- the order of the answers in json corresponds to the order accepted as correct in the test
+- in the current version all answers require the value to be true
+- the question requires the keyword `orientation` in the question to be `horizontal` or `vertical`
+  - with more than two words per answer the vertical orientation is recommended
+
+Example of three different question definitions in `assets/myQuestionnaire.json`:
 ```json
 [
   {
@@ -86,6 +93,25 @@ Example of two different question definitions in `assets/myQuestionnaire.json`:
       {
         "text": "teacher",
         "value": false
+      }
+    ]
+  },
+  {
+    "name": "Sort these entries!",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "First entry",
+        "value": true
+      },
+      {
+        "text": "Second entry",
+        "value": true
+      },
+      {
+        "text": "Third entry",
+        "value": true
       }
     ]
   }
