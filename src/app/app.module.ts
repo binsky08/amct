@@ -17,6 +17,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { TestComponent } from './test/test.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { TestComponent } from './test/test.component';
     MatCheckboxModule,
     MatRadioModule,
     MatButtonModule,
+    DragDropModule,
     FormsModule
   ],
   providers: [],

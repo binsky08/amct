@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../config.service';
 import { ITestConfig } from '../ITestConfig';
 import { ActivatedRoute } from '@angular/router';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-test',
@@ -16,6 +17,7 @@ export class TestComponent implements OnInit {
   private loadedTestConfig: ITestConfig;
   questionPool: [IQuestion];
   questions: [IQuestion];
+  dropListSource: [IQuestion];
   radioAnswers: [string];
   checkboxAnswers: [[boolean]];
   showSolution = false;
@@ -24,6 +26,18 @@ export class TestComponent implements OnInit {
   possibleAnswersCounter: number;
   startTest = false;
   numberOfRandomQuestions: number;
+
+  movies = [
+    'Episode I - The Phantom Menace',
+    'Episode II - Attack of the Clones',
+    'Episode III - Revenge of the Sith',
+    'Episode IV - A New Hope',
+    'Episode V - The Empire Strikes Back',
+    'Episode VI - Return of the Jedi',
+    'Episode VII - The Force Awakens',
+    'Episode VIII - The Last Jedi',
+    'Episode IX – The Rise of Skywalker'
+  ];
 
   constructor(private http: HttpClient, private config: ConfigService, private route: ActivatedRoute) {
   }
@@ -86,13 +100,21 @@ export class TestComponent implements OnInit {
 
   initiateQuestions(questions): void {
     this.questions = questions;
+    // @ts-ignore
+    this.dropListSource = [];
     this.radioAnswers = [''];
     this.checkboxAnswers = [[false]];
     for (let i = 0; i < questions.length; i++) {
-      this.radioAnswers[i] = '';
-      this.checkboxAnswers[i] = [false];
-      for (let k = 0; k < questions[i].answers.length; k++) {
-        this.checkboxAnswers[i][k] = false;
+      if (this.questions[i].type === 'dropList') {
+        const tmpQuestion = JSON.parse(JSON.stringify(this.questions[i]));  // clone array
+        tmpQuestion.id = i;
+        this.dropListSource.push(tmpQuestion);
+      } else {
+        this.radioAnswers[i] = '';
+        this.checkboxAnswers[i] = [false];
+        for (let k = 0; k < questions[i].answers.length; k++) {
+          this.checkboxAnswers[i][k] = false;
+        }
       }
     }
     this.startTest = true;
@@ -100,6 +122,19 @@ export class TestComponent implements OnInit {
 
   delay(ms: number): Promise<any> {
     return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  getDropListSourcePosition(questionId: number): number {
+    for (let i = 0; i < this.dropListSource.length; i++) {
+      if (this.dropListSource[i].id === questionId) {
+        return i;
+      }
+    }
+    return null;
+  }
+
+  drop(questionPosition: number, event: CdkDragDrop<string[]>): void {
+    moveItemInArray(this.dropListSource[this.getDropListSourcePosition(questionPosition)].answers, event.previousIndex, event.currentIndex);
   }
 
   solve(): void {
@@ -123,6 +158,16 @@ export class TestComponent implements OnInit {
           }
         }
       }
+      if (question.type === 'dropList') {
+        const orderedList = this.dropListSource[this.getDropListSourcePosition(i)];
+        for (let j = 0; j < question.answers.length; j++) {
+          this.possibleAnswersCounter++;
+          if (question.answers[j].text === orderedList.answers[j].text && question.answers[j].value && orderedList.answers[j].value) {
+            // right position in orderedList and the answer is marked as possible with value = true
+            this.rightAnswers++;
+          }
+        }
+      }
     }
   }
 
@@ -141,6 +186,12 @@ export class TestComponent implements OnInit {
   checkCheckboxSolution(question: IQuestion, answer: IAnswer, id: number, innerId: number): boolean {
     return answer.value && this.checkboxAnswers[id][innerId] ||
       (!answer.value && !this.checkboxAnswers[id][innerId]);
+  }
+
+  checkDropListSolution(question: IQuestion, answer: IAnswer, id: number, index: number): boolean {
+    const orderedList = this.dropListSource[this.getDropListSourcePosition(id)];
+    return question.answers[index].text === orderedList.answers[index].text
+      && question.answers[index].value && orderedList.answers[index].value;
   }
 
   reset(): void {

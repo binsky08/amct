@@ -38,6 +38,12 @@
             {{answer.text}}
           </mat-radio-button>
         </mat-radio-group>
+        <div *ngIf="question.type == 'dropList'" cdkDropList cdkDropListOrientation="{{question.orientation}}"
+             class="dropList {{question.orientation}}" (cdkDropListDropped)="drop(i, $event)">
+          <div class="dropListBox"
+               *ngFor="let answer of dropListSource[this.getDropListSourcePosition(i)].answers; let j = index" cdkDrag
+               [style]="showSolution ? (checkDropListSolution(questions[i], answer, i, j) ? 'color: green' : 'color: red') : ''">{{answer.text}}</div>
+        </div>
       </mat-card-content>
       <hr *ngIf="i < questions.length-1" class="mat-card-hr">
     </div>
@@ -52,6 +58,10 @@
               *ngIf="showSolution">
         Reset
       </button>
+      <button mat-raised-button color="basic" class="question-selector-button margin-left-10" routerLink="/"
+              *ngIf="showSolution">
+      < Home
+    </button>
     </span>
     <span style="float: right; margin-left: 10px; margin-top: 10px;" *ngIf="showSolution">
       {{rightAnswers}} von {{possibleAnswersCounter}} Antworten sind richtig!
