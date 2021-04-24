@@ -8,11 +8,10 @@
 
   <mat-card *ngIf="tests" class="textAlignCenter">
     <div *ngFor="let test of tests; let i = index">
-      <button mat-raised-button color="basic" class="question-selector-button margin-right-10"
+      <button mat-raised-button color="basic" class="question-selector-button {{i != 0 ? 'margin-top-20-important' : ''}}"
               routerLink="/test/{{test.uniqueIdentifier}}">
         {{test.title}}
       </button>
-      <hr *ngIf="i < tests.length-1" class="mat-card-hr">
     </div>
   </mat-card>
 
