@@ -1,0 +1,860 @@
+[
+  {
+    "name": "Markiere die Kennzeichen (sowie den zutreffenden Input und Output) der Softwareentwicklung.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Input: Programm-Spezifikation",
+        "value": false
+      },
+      {
+        "text": "Input: Problembeschreibung des Kunden",
+        "value": true
+      },
+      {
+        "text": "eher kleine und mittelgroße Programme",
+        "value": false
+      },
+      {
+        "text": "eher große und komplexe Softwaresysteme",
+        "value": true
+      },
+      {
+        "text": "Output: Softwaresystem zur Lösung des Kundenproblems",
+        "value": true
+      },
+      {
+        "text": "Output: benutzbares Programm",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Begriffe können Teile eines Scrum Verfahrens sein?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Development Team",
+        "value": true
+      },
+      {
+        "text": "Product Inkrement",
+        "value": true
+      },
+      {
+        "text": "Product Backlog",
+        "value": true
+      },
+      {
+        "text": "Product Owner",
+        "value": true
+      },
+      {
+        "text": "Product Master",
+        "value": false
+      },
+      {
+        "text": "Stand-Up Meeting",
+        "value": true
+      },
+      {
+        "text": "Stand-Up Inkrement",
+        "value": false
+      },
+      {
+        "text": "Scrum Owner",
+        "value": false
+      },
+      {
+        "text": "Scrum Master",
+        "value": true
+      },
+      {
+        "text": "Scrum Review",
+        "value": false
+      },
+      {
+        "text": "Sprint",
+        "value": true
+      },
+      {
+        "text": "Sprint Backlog",
+        "value": true
+      },
+      {
+        "text": "Sprint Review",
+        "value": true
+      },
+      {
+        "text": "Sprint Owner",
+        "value": false
+      },
+      {
+        "text": "Sprint Master",
+        "value": false
+      },
+      {
+        "text": "Velocity",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sortiere die Einträge nach der Scrum Reihenfolge.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Product Backlog erstellen",
+        "value": true
+      },
+      {
+        "text": "Aufgaben auswählen und priorisieren",
+        "value": true
+      },
+      {
+        "text": "Sprint planen",
+        "value": true
+      },
+      {
+        "text": "Sprint Backlog erstellen",
+        "value": true
+      },
+      {
+        "text": "Sprint durchführen",
+        "value": true
+      },
+      {
+        "text": "Inkrement erstellen",
+        "value": true
+      },
+      {
+        "text": "Sprint Review durchführen",
+        "value": true
+      },
+      {
+        "text": "Bewertung der geleisteten Arbeit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wähle den passenden Begriff: 'Es erfolgt die Beurteilung des Arbeitsfortschritts, sowie die Priorisierung der Tagesaufgaben'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Scrum Review",
+        "value": false
+      },
+      {
+        "text": "Stand-Up Meeting",
+        "value": true
+      },
+      {
+        "text": "Sprint Review",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wähle den passenden Begriff: 'Softwareinkrement als Ergebnis eines Sprints'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Product Inkrement",
+        "value": true
+      },
+      {
+        "text": "Stand-Up Inkrement",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Eine Entwicklungsiteration von wie vielen Wochen hat ein typischer Sprint?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "0 - 1 Woche",
+        "value": false
+      },
+      {
+        "text": "1 - 2 Wochen",
+        "value": false
+      },
+      {
+        "text": "2 - 4 Wochen",
+        "value": true
+      },
+      {
+        "text": "4 - 6 Wochen",
+        "value": false
+      },
+      {
+        "text": "4 - 12 Wochen",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Sortiere die drei Phasen des Scrum und ordne ihnen Ihre Unterpunkte zu.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Allgemeine Planungsphase",
+        "value": true
+      },
+      {
+        "text": "--- Entwurf der Softwarearchitektur",
+        "value": true
+      },
+      {
+        "text": "Serie von Sprint Zyklen",
+        "value": true
+      },
+      {
+        "text": "--- sich wiederholendes: bewerten, auswählen, entwickeln, besprechen",
+        "value": true
+      },
+      {
+        "text": "Projektschlussphase",
+        "value": true
+      },
+      {
+        "text": "--- Dokumentation vervollständigen",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wähle den passenden Begriff: 'Bei der Kommentarfunktion muss der europäische Datenschutz berücksichtigt werden'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Produktanforderung",
+        "value": false
+      },
+      {
+        "text": "Unternehmensanforderung",
+        "value": false
+      },
+      {
+        "text": "externe Anforderung",
+        "value": true
+      },
+      {
+        "text": "nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "In UML gibt es sog. Struktur- und Verhaltensmodelle. Wähle alle Strukturmodelle aus.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Anwendungsfalldiagramm",
+        "value": false
+      },
+      {
+        "text": "Klassendiagramm",
+        "value": true
+      },
+      {
+        "text": "Zustandsdiagramm",
+        "value": false
+      },
+      {
+        "text": "Aktivitätsdiagramm",
+        "value": false
+      },
+      {
+        "text": "Sequenzdiagramm",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei der Validierung von Produkten wird überprüft, ob ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "das Produkt die vorgesehenen Nutzungsziele erfüllt.",
+        "value": true
+      },
+      {
+        "text": "das Produkt mit seinen vorgegebenen Spezifikationen übereinstimmt.",
+        "value": false
+      },
+      {
+        "text": "der vom Marketing veröffentlichte Preis eingehalten wurde.",
+        "value": false
+      },
+      {
+        "text": "nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei der Verifizierung von Produkten wird überprüft, ob ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "das Produkt die vorgesehenen Nutzungsziele erfüllt.",
+        "value": false
+      },
+      {
+        "text": "das Produkt mit seinen vorgegebenen Spezifikationen übereinstimmt.",
+        "value": true
+      },
+      {
+        "text": "der vom Marketing veröffentlichte Preis eingehalten wurde.",
+        "value": false
+      },
+      {
+        "text": "nichts davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Markiere mögliche Vorteile von Softwareinspektionen gegenüber Tests.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Beim Testen können Fehler andere Fehler verdecken / verbergen",
+        "value": true
+      },
+      {
+        "text": "Unvollständige Systemversionen lassen sich ohne Zusatzkosten inspizieren",
+        "value": true
+      },
+      {
+        "text": "Betrachtung weitergehender qualitativer Programmeigenschaften",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Während der Entwicklung kann Testen auf drei Detailstufen ausgeführt werden. Welche sind das?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Freigabetests",
+        "value": false
+      },
+      {
+        "text": "Softwaretests",
+        "value": false
+      },
+      {
+        "text": "Modultests",
+        "value": true
+      },
+      {
+        "text": "Komponententests",
+        "value": true
+      },
+      {
+        "text": "Systemtests",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Ein automatisierter Test hat mehrere Bestandteile. Welche sind das?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Aufbau",
+        "value": true
+      },
+      {
+        "text": "Aufruf",
+        "value": true
+      },
+      {
+        "text": "Bewertung",
+        "value": true
+      },
+      {
+        "text": "Abbau",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf einen Leistungstest zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Sollte unbedingt von einem nicht an der Systementwicklung beteiligten Team durchgeführt werden",
+        "value": false
+      },
+      {
+        "text": "Versucht zu zeigen, dass das System seine Anforderungen ordnungsgemäß implementiert hat",
+        "value": false
+      },
+      {
+        "text": "Sollte durchgeführt werden, sobald ein System vollständig integriert ist",
+        "value": true
+      },
+      {
+        "text": "Prüft, dass eine Überbelastung des Systems einen „sanften Ausfall“ und nicht einen Zusammenbruch des Systems herbeiführt",
+        "value": true
+      },
+      {
+        "text": "Methode des Freigabetestens",
+        "value": false
+      },
+      {
+        "text": "Belastung wird so lange erhöht, bis die Systemleistung inakzeptabel wird",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sortiere die Einträge nach den 6 Phasen des Abnahmetestprozess.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Abnahmekriterien festlegen",
+        "value": true
+      },
+      {
+        "text": "Abnahmetests planen",
+        "value": true
+      },
+      {
+        "text": "Abnahmetests ableiten",
+        "value": true
+      },
+      {
+        "text": "Abnahmetests ausführen",
+        "value": true
+      },
+      {
+        "text": "Testergebnisse verhandeln",
+        "value": true
+      },
+      {
+        "text": "Das System ablehnen bzw. akzeptieren",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Agile Methoden zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "inkrementelle Auslieferung",
+        "value": true
+      },
+      {
+        "text": "flexibel für Änderungen",
+        "value": true
+      },
+      {
+        "text": "einfache Priorisierung von Änderungen",
+        "value": false
+      },
+      {
+        "text": "benötigt spezielle Verträge",
+        "value": true
+      },
+      {
+        "text": "System ist eher klein",
+        "value": true
+      },
+      {
+        "text": "Entwicklerteam arbeitet primär dezentral",
+        "value": false
+      },
+      {
+        "text": "hoher Analysebedarf vor der Implementierung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was passt zu Benutzeranforderungen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "abstrakte Anforderungen",
+        "value": true
+      },
+      {
+        "text": "Systembeschränkungen",
+        "value": false
+      },
+      {
+        "text": "natürliche Sprache",
+        "value": true
+      },
+      {
+        "text": "intuitive Diagramme",
+        "value": true
+      },
+      {
+        "text": "graphische / mathematische Systemmodelle",
+        "value": false
+      },
+      {
+        "text": "keine Einzelheiten der Systemarchitektur",
+        "value": true
+      },
+      {
+        "text": "detaillierte Beschreibung dessen, was das System leisten soll",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was passt zu Systemanforderungen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "abstrakte Anforderungen",
+        "value": false
+      },
+      {
+        "text": "Systembeschränkungen",
+        "value": true
+      },
+      {
+        "text": "natürliche Sprache",
+        "value": true
+      },
+      {
+        "text": "intuitive Diagramme",
+        "value": false
+      },
+      {
+        "text": "graphische / mathematische Systemmodelle",
+        "value": true
+      },
+      {
+        "text": "keine Einzelheiten der Systemarchitektur",
+        "value": false
+      },
+      {
+        "text": "detaillierte Beschreibung dessen, was das System leisten soll",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Der Zyklus der Anforderungserhebung ist beendet, wenn ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "die Gesamtsystemspezifikation vollständig ist.",
+        "value": true
+      },
+      {
+        "text": "man einfach keinen Bock mehr hat!",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Projektbeteiligte mit möglichem Einfluss auf die Systemanforderungen können ... sein.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Behörden",
+        "value": true
+      },
+      {
+        "text": "Entwickler",
+        "value": true
+      },
+      {
+        "text": "Endbenutzer",
+        "value": true
+      },
+      {
+        "text": "Wirtschaftsmanager",
+        "value": true
+      },
+      {
+        "text": "Experten des Anwendungsbereichs",
+        "value": true
+      },
+      {
+        "text": "Betriebsratsmitglieder",
+        "value": true
+      },
+      {
+        "text": "der Vogel, der ständig mit dem Schnabel ans Fenster klopft und alle nervt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Fähigkeiten eines erfolgreichen Interviewers:",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "aufgeschlossen sein",
+        "value": true
+      },
+      {
+        "text": "vorgefertigte Meinungen vermeiden",
+        "value": true
+      },
+      {
+        "text": "zuhören können",
+        "value": true
+      },
+      {
+        "text": "bereit sein, die bestehende Ansicht über das System zu ändern",
+        "value": true
+      },
+      {
+        "text": "den Interviewten unterschwellig seine eigene Meinung aufdrücken",
+        "value": false
+      },
+      {
+        "text": "passende Einstiegsfrage stellen können",
+        "value": true
+      },
+      {
+        "text": "Kamerascheu sein",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Beständige Anforderungen sind mit ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "grundlegenden Aktivitäten verbunden",
+        "value": true
+      },
+      {
+        "text": "unterstützenden Aktivitäten verbunden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Unbeständige Anforderungen sind mit ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "grundlegenden Aktivitäten verbunden",
+        "value": false
+      },
+      {
+        "text": "unterstützenden Aktivitäten verbunden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Prüfart passt zu der Beschreibung: 'Anforderungen im Dokument sollten sich nicht widersprechen.'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Gültigkeitsprüfung",
+        "value": false
+      },
+      {
+        "text": "Konsistenzprüfung",
+        "value": true
+      },
+      {
+        "text": "Vollständigkeitsprüfung",
+        "value": false
+      },
+      {
+        "text": "Realisierbarkeitsprüfung",
+        "value": false
+      },
+      {
+        "text": "Verifizierbarkeitsprüfung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Prüfart passt zu der Beschreibung: 'Prüfung der Anforderungen auf Umsetzbarkeit und Berücksichtigung von Budget und Zeitplan für die Systementwicklung.'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Gültigkeitsprüfung",
+        "value": false
+      },
+      {
+        "text": "Konsistenzprüfung",
+        "value": false
+      },
+      {
+        "text": "Vollständigkeitsprüfung",
+        "value": false
+      },
+      {
+        "text": "Realisierbarkeitsprüfung",
+        "value": true
+      },
+      {
+        "text": "Verifizierbarkeitsprüfung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bringe die Satzteile mit Bezug auf das Änderungsmanagement in die richtige Reihenfolge.",
+    "type": "dropList",
+    "orientation": "horizontal",
+    "answers": [
+      {
+        "text": "Es sollte vermieden werden, erst",
+        "value": true
+      },
+      {
+        "text": "die Systemimplementierung",
+        "value": true
+      },
+      {
+        "text": "und danach",
+        "value": true
+      },
+      {
+        "text": "die Gesamtsystemspezifikation",
+        "value": true
+      },
+      {
+        "text": "zu ändern, da so beide durch Vergessen",
+        "value": true
+      },
+      {
+        "text": "der nachträglichen Anpassungen ihre",
+        "value": true
+      },
+      {
+        "text": "notwendige Übereinstimmung",
+        "value": true
+      },
+      {
+        "text": "verlieren können",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft bei einem Anwendungsfalldiagramm zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "zeigt die Aktivitäten, die an einem Prozess oder an der Verarbeitung der Daten beteiligt sind",
+        "value": false
+      },
+      {
+        "text": "einfaches Szenario, welches beschreibt, was ein Benutzer von einem System erwartet",
+        "value": true
+      },
+      {
+        "text": "um 90° gedrehte kleine Quadrate (Rauten) kennzeichnen Entscheidungspunkte",
+        "value": false
+      },
+      {
+        "text": "eine gestrichelte Lebenslinie führt nach unten von allen Beteiligten weg",
+        "value": false
+      },
+      {
+        "text": "um Alternativen anzugeben, wird ein mit 'alt' gekennzeichnetes Rechteck verwendet",
+        "value": false
+      },
+      {
+        "text": "zeigt, wie das System auf interne und externe Ereignisse reagiert",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft bei einem Sequenzdiagramm zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "zeigt die Aktivitäten, die an einem Prozess oder an der Verarbeitung der Daten beteiligt sind",
+        "value": false
+      },
+      {
+        "text": "einfaches Szenario, welches beschreibt, was ein Benutzer von einem System erwartet",
+        "value": false
+      },
+      {
+        "text": "um 90° gedrehte kleine Quadrate (Rauten) kennzeichnen Entscheidungspunkte",
+        "value": false
+      },
+      {
+        "text": "eine gestrichelte Lebenslinie führt nach unten von allen Beteiligten weg",
+        "value": true
+      },
+      {
+        "text": "um Alternativen anzugeben, wird ein mit 'alt' gekennzeichnetes Rechteck verwendet",
+        "value": true
+      },
+      {
+        "text": "zeigt, wie das System auf interne und externe Ereignisse reagiert",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft bei einem Aktivitätsdiagramm zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "zeigt die Aktivitäten, die an einem Prozess oder an der Verarbeitung der Daten beteiligt sind",
+        "value": true
+      },
+      {
+        "text": "einfaches Szenario, welches beschreibt, was ein Benutzer von einem System erwartet",
+        "value": false
+      },
+      {
+        "text": "um 90° gedrehte kleine Quadrate (Rauten) kennzeichnen Entscheidungspunkte",
+        "value": true
+      },
+      {
+        "text": "eine gestrichelte Lebenslinie führt nach unten von allen Beteiligten weg",
+        "value": false
+      },
+      {
+        "text": "um Alternativen anzugeben, wird ein mit 'alt' gekennzeichnetes Rechteck verwendet",
+        "value": false
+      },
+      {
+        "text": "zeigt, wie das System auf interne und externe Ereignisse reagiert",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei welchen dieser Entwurfsmodelle handelt es sich um dynamische Modelle?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Subsystemmodell",
+        "value": false
+      },
+      {
+        "text": "Sequenzmodell",
+        "value": true
+      },
+      {
+        "text": "Zustandsmodell",
+        "value": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,697 @@
+[
+  {
+    "name": "Für welche der folgenden Anwendungsfälle ist JavaScript zu gebrauchen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Klick auf einen Button auswerten",
+        "value": true
+      },
+      {
+        "text": "Ausführung im Frontend (Client Seite)",
+        "value": true
+      },
+      {
+        "text": "Ausführung im Backend (Server Seite)",
+        "value": true
+      },
+      {
+        "text": "Dateien herunterladen",
+        "value": true
+      },
+      {
+        "text": "Style auf einer Webseite ändern",
+        "value": true
+      },
+      {
+        "text": "Programmierung von Spielen",
+        "value": true
+      },
+      {
+        "text": "Objektorientierte Programmierung",
+        "value": true
+      },
+      {
+        "text": "Kuchen essen",
+        "value": false
+      },
+      {
+        "text": "Audio und Video Steuerung auf einer Webseite",
+        "value": true
+      },
+      {
+        "text": "Cryptomining",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welcher Schlüsselwörter kann man in JavaScript Variablen deklarieren?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "var",
+        "value": true
+      },
+      {
+        "text": "let",
+        "value": true
+      },
+      {
+        "text": "const",
+        "value": true
+      },
+      {
+        "text": "int",
+        "value": false
+      },
+      {
+        "text": "Object",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Tag kann JavaScript in HTML eingebunden werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "<js>",
+        "value": false
+      },
+      {
+        "text": "<script>",
+        "value": true
+      },
+      {
+        "text": "<code>",
+        "value": false
+      },
+      {
+        "text": "<source type='text/javascript' src='myJSCode.js'>",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wird JavaScript zur Ausführung kompiliert?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Ja",
+        "value": false
+      },
+      {
+        "text": "Nein",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was bewirkt \"use strict\"; zu Beginn von JavaScript Code?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Macht aus manchen Tippfehlern Syntaxfehler und erleichtert so das Debugging",
+        "value": true
+      },
+      {
+        "text": "Im folgenden Code ist nur rohes JavaScript zulässig (z.B. kein JQuery)",
+        "value": false
+      },
+      {
+        "text": "Bewirkt die explizite synchrone Ausführung des nachfolgenden Codes während des Ladens der Inhalte",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welchem Muster folgt Code zum Abfangen von Exceptions in JavaScript?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "try { ... } except(exception) { ... }",
+        "value": false
+      },
+      {
+        "text": "try { ... } catch(e) { ... }",
+        "value": true
+      },
+      {
+        "text": "try { ... } catch(exception) { ... }",
+        "value": true
+      },
+      {
+        "text": "try (() => { console.log(\"Oh no!\"); throw \"Ich bin ein Error\"; }) catch(foo) { console.log(foo); }",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Schleifenköpfe sind valide und führen mindestens 5 Iterationen in JavaScript aus?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "for (var i = 0; i < 5; i++)",
+        "value": true
+      },
+      {
+        "text": "for (let i = 0; i < 5; i++)",
+        "value": true
+      },
+      {
+        "text": "for (const i = 0; i < 5; i++)",
+        "value": false
+      },
+      {
+        "text": "while (let i = 0; i < 5; i++)",
+        "value": false
+      },
+      {
+        "text": "do { console.log(2); continue 5; } while (true)",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Bedingungen werden in JavaScript zu true ausgewertet?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "1 == 1",
+        "value": true
+      },
+      {
+        "text": "1 == '1'",
+        "value": true
+      },
+      {
+        "text": "1 === '1'",
+        "value": false
+      },
+      {
+        "text": "'Foo' == 1",
+        "value": false
+      },
+      {
+        "text": "1 !== false",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Codezeilen definieren valide Funktionen in JavaScript?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "var catch = function(x) { console.log(42); };",
+        "value": false
+      },
+      {
+        "text": "let foo = function(a) { return a * 2; };",
+        "value": true
+      },
+      {
+        "text": "const bert = (a) => { return a+1; };",
+        "value": true
+      },
+      {
+        "text": "const fAnCY = new Function('return 1');",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Schlüsselwort kann man in JavaScript eine Variable mit sog. Block Scope deklarieren?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "var",
+        "value": false
+      },
+      {
+        "text": "let",
+        "value": true
+      },
+      {
+        "text": "const",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Schlüsselwort kann man in JavaScript eine Variable mit sog. Function Level Scope deklarieren?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "var",
+        "value": true
+      },
+      {
+        "text": "let",
+        "value": false
+      },
+      {
+        "text": "const",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Block Scope bedeutet in JavaScript ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Variablen können vor ihrer Deklaration genutzt werden",
+        "value": false
+      },
+      {
+        "text": "Funktionen können vor ihrer Deklaration genutzt werden",
+        "value": false
+      },
+      {
+        "text": "Variablen können mehrfach deklariert werden",
+        "value": false
+      },
+      {
+        "text": "Funktionen können nicht mehrfach deklariert werden",
+        "value": true
+      },
+      {
+        "text": "Fehler werden auch ohne 'use strict'; in der Konsole angezeigt",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Function Level Scope bedeutet in JavaScript ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Variablen können vor ihrer Deklaration genutzt werden",
+        "value": true
+      },
+      {
+        "text": "Funktionen können vor ihrer Deklaration genutzt werden",
+        "value": true
+      },
+      {
+        "text": "Variablen können mehrfach deklariert werden",
+        "value": true
+      },
+      {
+        "text": "Funktionen können nicht mehrfach deklariert werden",
+        "value": false
+      },
+      {
+        "text": "Fehler werden auch ohne 'use strict'; in der Konsole angezeigt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Optionen stimmen oder sind valide im Bezug auf Arrays in JavaScript?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Können Elemente beliebigen Typs enthalten",
+        "value": true
+      },
+      {
+        "text": "Können nur Elemente primitiver Datentypen enthalten",
+        "value": false
+      },
+      {
+        "text": "let foo = [[1,2,3,['foo']], [1,2,3], [1,2], [1]];",
+        "value": true
+      },
+      {
+        "text": "const myArr = new Array(0);",
+        "value": true
+      },
+      {
+        "text": "var bert = [];",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie kann in JavaScript aus einer Zeichenkette mit einer Zahl ein Integer gemacht werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "let i = int('42')",
+        "value": false
+      },
+      {
+        "text": "let i = '42'.parseInt()",
+        "value": false
+      },
+      {
+        "text": "let i = parseInt('42')",
+        "value": true
+      },
+      {
+        "text": "intval('42');",
+        "value": false
+      },
+      {
+        "text": "let i = '42' + 1;",
+        "value": false
+      },
+      {
+        "text": "let i = +'42'",
+        "value": true
+      },
+      {
+        "text": "'42' * 1",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Methoden können in JavaScript ohne Fehler auf einen String ausgeführt werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "let foo = 'bert'; foo.trim();",
+        "value": true
+      },
+      {
+        "text": "let foo = 'bert'; foo.indexOf(3);",
+        "value": true
+      },
+      {
+        "text": "let foo = 'bert'; foo.toLowerCase(3);",
+        "value": true
+      },
+      {
+        "text": "let foo = 'bert'; foo.toUpperCase();",
+        "value": true
+      },
+      {
+        "text": "let foo = 'bert'; foo.toString();",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Aufruf bekommt man in JavaScript Informationen über die aktuelle Webseite (z.B. die URL)?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "document.location",
+        "value": true
+      },
+      {
+        "text": "document.window",
+        "value": false
+      },
+      {
+        "text": "window.document",
+        "value": true
+      },
+      {
+        "text": "window.location",
+        "value": true
+      },
+      {
+        "text": "location.toString()",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was ist ein Cookie?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ein Keks",
+        "value": true
+      },
+      {
+        "text": "Textdateien zur clientseitigen Speicherung sessionspezifischer Daten",
+        "value": true
+      },
+      {
+        "text": "Textdateien zur serverseitigen Speicherung sessionspezifischer Daten",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Innerhalb einer Objektmethode gibt der Ausdruck 'this' ... ",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "das Objekt selbst zurück",
+        "value": false
+      },
+      {
+        "text": "das Window zurück",
+        "value": true
+      },
+      {
+        "text": "die Methode selbst zurück",
+        "value": false
+      },
+      {
+        "text": "nichts zurück",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was ist kein valides JSON?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "{ 'name': 'max' }",
+        "value": true
+      },
+      {
+        "text": "{ \"name\": \"max\" }",
+        "value": false
+      },
+      {
+        "text": "{ \"name\": \"max\", foo: [42, \"bert\"] }",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was ist valides XML?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "<Application><Content></Content></Application>",
+        "value": true
+      },
+      {
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Application><Content/></Application>",
+        "value": true
+      },
+      {
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Application><Content><//Content></Application>",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf AJAX zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ermöglicht nur synchrone Kommunikation",
+        "value": false
+      },
+      {
+        "text": "Ermöglicht nur asynchrone Kommunikation",
+        "value": false
+      },
+      {
+        "text": "Ermöglicht es nur Teile einer Webseite zu laden",
+        "value": true
+      },
+      {
+        "text": "Basiert auf XMLHttpRequest",
+        "value": true
+      },
+      {
+        "text": "Ermöglicht nur XML Übertragung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Sortiere diese Einträge so, dass mit AJAX eine Verbindung zu einem Server hergestellt und Daten heruntergeladen werden könnten.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "let thatsMyAwesomeVariable = 42;",
+        "value": true
+      },
+      {
+        "text": "thatsMyAwesomeVariable = new XMLHttpRequest();",
+        "value": true
+      },
+      {
+        "text": "const url = \"https://binsky.org/credentials.txt\"; thatsMyAwesomeVariable.onload = function() { console.log('got it'); };",
+        "value": true
+      },
+      {
+        "text": "thatsMyAwesomeVariable.open(\"GET\", url, true);",
+        "value": true
+      },
+      {
+        "text": "thatsMyAwesomeVariable.send();",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchen Aufrufen könnten theoretisch Daten per JavaScript transferiert werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "fetch('https://amct.binsky.org/assets/config.json').then(response => response.json()).then(data => console.log(data));",
+        "value": true
+      },
+      {
+        "text": "fetch('https://amct.binsky.org/assets/config.json', true).then(console.log(response.json()));",
+        "value": false
+      },
+      {
+        "text": "fetch('https://amct.binsky.org/register', { method: 'POST', body: 'Meine Kreditkartennummer ist 0...' });",
+        "value": true
+      },
+      {
+        "text": "new XMLHttpRequest().open('GET', 'https://amct.binsky.org/assets/config.json', true).send();",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Innerhalb welcher Funktionsdeklaration kann in JavaScript der Code \"let i = await fetch('https://amct.binsky.org');\" aufgerufen werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "let foo = function() { ... }",
+        "value": false
+      },
+      {
+        "text": "let foo = async function(i) { ... }",
+        "value": false
+      },
+      {
+        "text": "async function fAnCY() { ... }",
+        "value": true
+      },
+      {
+        "text": "const bert = async function() { ... }",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Interfaces in JavaScript zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "In JavaScript gibt es keine Interfaces wie z.B. in Java",
+        "value": true
+      },
+      {
+        "text": "TypeScript hat Interfaces und kann zu JavaScript umgewandelt werden",
+        "value": true
+      },
+      {
+        "text": "Interfaces können z.B. nach dem 'Duck Typing' Konzept emuliert werden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Eigenschaften treffen auf Websockets zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ermöglichen eine bidirektionale Verbindung zwischen Client und Server",
+        "value": true
+      },
+      {
+        "text": "Ermöglichen eine unidirektionale Verbindung zwischen Client und Server",
+        "value": false
+      },
+      {
+        "text": "Ermöglichen den 'push' von Nachrichten vom Server ausgehend, hin zum Client",
+        "value": true
+      },
+      {
+        "text": "Möglicher Einsatz bei Onlinespielen",
+        "value": true
+      },
+      {
+        "text": "Konnten bereits mit Internet Explorer 8 genutzt werden",
+        "value": false
+      },
+      {
+        "text": "WebSocket.url muss manuell die aufzurufende URL zugewiesen werden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche 'MouseEvent Types' gibt es in JavaScript?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "onclick",
+        "value": true
+      },
+      {
+        "text": "onmouseenter",
+        "value": true
+      },
+      {
+        "text": "onmouseout",
+        "value": true
+      },
+      {
+        "text": "mouseup",
+        "value": false
+      },
+      {
+        "text": "ondblclick",
+        "value": true
+      },
+      {
+        "text": "onmousecaught",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was ist Canvas?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ein amerikanischer Bundesstaat",
+        "value": false
+      },
+      {
+        "text": "Eine JavaScript Bibliothek, die zum Zeichnen von 2D-Bildern genutzt werden kann",
+        "value": false
+      },
+      {
+        "text": "Ein HTML Element, welches mit JavaScript zur Videomanipulation verwendet werden kann",
+        "value": true
+      },
+      {
+        "text": "Ein HTML Element, welches eine Zeichenfläche für JavaScript zur Verfügung stellt",
+        "value": true
+      }
+    ]
+  }
+]

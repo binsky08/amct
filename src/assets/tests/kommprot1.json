@@ -1,0 +1,1054 @@
+[
+  {
+    "name": "Was bedeutet unidirektional?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "von Quelle zu Ziel, in einer Richtung",
+        "value": true
+      },
+      {
+        "text": "zwischen beiden Endpunkten, in jede Richtung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Netztopologien gibt es?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Auto Topologie",
+        "value": false
+      },
+      {
+        "text": "Bus Topologie",
+        "value": true
+      },
+      {
+        "text": "Linien Topologie",
+        "value": true
+      },
+      {
+        "text": "Ring Topologie",
+        "value": true
+      },
+      {
+        "text": "Kreis Topologie",
+        "value": false
+      },
+      {
+        "text": "Stern Topologie",
+        "value": true
+      },
+      {
+        "text": "Baum Topologie",
+        "value": true
+      },
+      {
+        "text": "Mesh Topologie",
+        "value": true
+      },
+      {
+        "text": "Hash Topologie",
+        "value": false
+      },
+      {
+        "text": "Zell Topologie",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Ordne die Schichten des OSI-Referenzmodells in der Liste so an, dass die hardwarenaheste Schicht ganz unten steht.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Anwendungsschicht",
+        "value": true
+      },
+      {
+        "text": "Darstellungsschicht",
+        "value": true
+      },
+      {
+        "text": "Sitzungsschicht",
+        "value": true
+      },
+      {
+        "text": "Transportschicht",
+        "value": true
+      },
+      {
+        "text": "Vermittlungsschicht",
+        "value": true
+      },
+      {
+        "text": "Sicherungsschicht",
+        "value": true
+      },
+      {
+        "text": "Bitübertragungsschicht",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Eigenschaften treffen auf eine Leitungsvermittlung zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "benötigt Verbindungsaufbau",
+        "value": true
+      },
+      {
+        "text": "virtuelle Leitung (E2E) wird für die Dauer der Übertragung exklusiv reserviert",
+        "value": true
+      },
+      {
+        "text": "Verzögerung durch Verarbeitung, Versand, Stau",
+        "value": false
+      },
+      {
+        "text": "es gibt keine Lastverteilung",
+        "value": true
+      },
+      {
+        "text": "es gibt keinen Paketstau",
+        "value": true
+      },
+      {
+        "text": "Pakete werden verworfen, wenn die Warteschlange voll ist",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Eigenschaften treffen auf eine Paketvermittlung zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "benötigt Verbindungsaufbau",
+        "value": false
+      },
+      {
+        "text": "virtuelle Leitung (E2E) wird für die Dauer der Übertragung exklusiv reserviert",
+        "value": false
+      },
+      {
+        "text": "Verzögerung durch Verarbeitung, Versand, Stau",
+        "value": true
+      },
+      {
+        "text": "es gibt keine Lastverteilung",
+        "value": false
+      },
+      {
+        "text": "es gibt keinen Paketstau",
+        "value": false
+      },
+      {
+        "text": "Pakete werden verworfen, wenn die Warteschlange voll ist",
+        "value": true
+      },
+      {
+        "text": "Ausfall eines Vermittlers führt zu Abbruch von Verbindungen",
+        "value": false
+      },
+      {
+        "text": "Pakete werden im Core mit max. Bitrate des jeweiligen Links versendet",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Netzklassifizierung wird meist bei bis zu 100km Ausdehnung eingesetzt?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "WAN",
+        "value": false
+      },
+      {
+        "text": "MAN",
+        "value": true
+      },
+      {
+        "text": "GAN",
+        "value": false
+      },
+      {
+        "text": "PAN",
+        "value": false
+      },
+      {
+        "text": "VPN",
+        "value": false
+      },
+      {
+        "text": "SAN",
+        "value": false
+      },
+      {
+        "text": "LAN",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Netzwerk können virtuelle, verschlüsselte Verbindungen aufgebaut werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "WAN",
+        "value": false
+      },
+      {
+        "text": "MAN",
+        "value": false
+      },
+      {
+        "text": "GAN",
+        "value": false
+      },
+      {
+        "text": "PAN",
+        "value": false
+      },
+      {
+        "text": "VPN",
+        "value": true
+      },
+      {
+        "text": "SAN",
+        "value": false
+      },
+      {
+        "text": "LAN",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Protokolle werden auf der Transportschicht gesprochen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "TLS",
+        "value": false
+      },
+      {
+        "text": "UDP",
+        "value": true
+      },
+      {
+        "text": "UPS",
+        "value": false
+      },
+      {
+        "text": "TCP",
+        "value": true
+      },
+      {
+        "text": "TLP",
+        "value": false
+      },
+      {
+        "text": "HTTP",
+        "value": false
+      },
+      {
+        "text": "SIP",
+        "value": false
+      },
+      {
+        "text": "SSH",
+        "value": false
+      },
+      {
+        "text": "DHCP",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Protokolle erfordern keinen Aufbau einer gesicherten Übertragung durch die Transportschicht?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "TLS",
+        "value": false
+      },
+      {
+        "text": "UDP",
+        "value": false
+      },
+      {
+        "text": "UPS",
+        "value": false
+      },
+      {
+        "text": "TCP",
+        "value": false
+      },
+      {
+        "text": "TLP",
+        "value": false
+      },
+      {
+        "text": "HTTP",
+        "value": false
+      },
+      {
+        "text": "SIP",
+        "value": true
+      },
+      {
+        "text": "SSH",
+        "value": false
+      },
+      {
+        "text": "DHCP",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welcher Standard gehört zur Standardisierungsgruppe IEEE?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "802.11",
+        "value": true
+      },
+      {
+        "text": "UMTS",
+        "value": false
+      },
+      {
+        "text": "RFC 7540",
+        "value": false
+      },
+      {
+        "text": "ITU-T",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit dem Einsatz welcher Mittel könnte der Abruf von Ressourcen der Webseite https://binsky.org beschleunigt werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Proxy Cache",
+        "value": true
+      },
+      {
+        "text": "CDN Cache",
+        "value": true
+      },
+      {
+        "text": "Cookies",
+        "value": false
+      },
+      {
+        "text": "Local Cache",
+        "value": true
+      },
+      {
+        "text": "DNS Cache",
+        "value": true
+      },
+      {
+        "text": "HTTP2",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf das Domain Name System zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Verwendung von TCP für Client DNS Abfragen",
+        "value": false
+      },
+      {
+        "text": "Verwendung von TCP für den Zonenaustausch untereinander",
+        "value": true
+      },
+      {
+        "text": "Es können PTR Requests durchgeführt werden",
+        "value": true
+      },
+      {
+        "text": "Standard Port 53",
+        "value": true
+      },
+      {
+        "text": "Standard Port 35",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der folgenden Parameter können durch DHCP konfiguriert werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "IP Adresse",
+        "value": true
+      },
+      {
+        "text": "IP Adress Lease Time",
+        "value": true
+      },
+      {
+        "text": "Gateway",
+        "value": true
+      },
+      {
+        "text": "Broadcast Adresse",
+        "value": true
+      },
+      {
+        "text": "MAC Adresse",
+        "value": false
+      },
+      {
+        "text": "DNS Server",
+        "value": true
+      },
+      {
+        "text": "NTP Server",
+        "value": true
+      },
+      {
+        "text": "IRC Server",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Die Nutzung welches Portbereichs erfordert Administratorrechte?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ports < 1024",
+        "value": true
+      },
+      {
+        "text": "Ports 1024 - 49151",
+        "value": false
+      },
+      {
+        "text": "Ports 49152 - 65535",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Sortiere die Einträge der Liste so, dass ein korrekter TCP Verbindungsaufbau und Abbau nacheinander ausgeführt wird.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Client schickt SYN an Server",
+        "value": true
+      },
+      {
+        "text": "Server bestätigt mit ACK und schickt zugleich ein eigenes SYN",
+        "value": true
+      },
+      {
+        "text": "Client bestätigt mit ACK (und kann gleichzeitig Nutzdaten mitsenden)",
+        "value": true
+      },
+      {
+        "text": "Client schickt FIN an Server",
+        "value": true
+      },
+      {
+        "text": "Server bestätigt mit ACK",
+        "value": true
+      },
+      {
+        "text": "Server schickt FIN an Client",
+        "value": true
+      },
+      {
+        "text": "Client bestätigt mit ACK",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie viel Bit hat das Feld 'Source Port' im TCP Header?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "8",
+        "value": false
+      },
+      {
+        "text": "16",
+        "value": true
+      },
+      {
+        "text": "24",
+        "value": false
+      },
+      {
+        "text": "32",
+        "value": false
+      },
+      {
+        "text": "64",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche 'Control Flags' gibt es im TCP Header?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "BGN",
+        "value": false
+      },
+      {
+        "text": "URG",
+        "value": true
+      },
+      {
+        "text": "ACK",
+        "value": true
+      },
+      {
+        "text": "PSH",
+        "value": true
+      },
+      {
+        "text": "SPT",
+        "value": false
+      },
+      {
+        "text": "RST",
+        "value": true
+      },
+      {
+        "text": "SYN",
+        "value": true
+      },
+      {
+        "text": "IGN",
+        "value": false
+      },
+      {
+        "text": "FIN",
+        "value": true
+      },
+      {
+        "text": "FUCK",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Verfahren zur Staukontrolle gibt es für TCP?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Tahoe",
+        "value": true
+      },
+      {
+        "text": "Aloa",
+        "value": false
+      },
+      {
+        "text": "Tahiti",
+        "value": false
+      },
+      {
+        "text": "Reno",
+        "value": true
+      },
+      {
+        "text": "AIMD",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was definiert Sicherheit für Transportprotokolle?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Vertraulichkeit",
+        "value": true
+      },
+      {
+        "text": "Integrität",
+        "value": true
+      },
+      {
+        "text": "Verbindlichkeit",
+        "value": true
+      },
+      {
+        "text": "Authentizität",
+        "value": true
+      },
+      {
+        "text": "Autorität",
+        "value": false
+      },
+      {
+        "text": "Verfügbarkeit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf TLS zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "symmetrischer Schlüssel für transportierte Daten",
+        "value": true
+      },
+      {
+        "text": "Einbettung einer Anwendung in TLS ist möglich",
+        "value": true
+      },
+      {
+        "text": "Öffentlicher Schlüssel im Zertifikat bildet digitale Identität",
+        "value": true
+      },
+      {
+        "text": "asymmetrische Verschlüsselung für Schlüsselaustausch",
+        "value": true
+      },
+      {
+        "text": "Läuft auf der Transportschicht",
+        "value": false
+      },
+      {
+        "text": "Läuft auf der Vermittlungsschicht",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf QUIC zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "geringe Latenz beim Verbindungsaufbau",
+        "value": true
+      },
+      {
+        "text": "mehrere Streams und separate Flusskontrolle",
+        "value": true
+      },
+      {
+        "text": "hat die selbe Fehler- und Staukontrolle wie HTTP/2",
+        "value": false
+      },
+      {
+        "text": "Nutzung mehrerer Pfade für die Übertragung",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf IPv4 Adressen zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "32 Bit lang",
+        "value": true
+      },
+      {
+        "text": "typische Darstellung: 4 Bytes (Oktetts)",
+        "value": true
+      },
+      {
+        "text": "128 Bit lang",
+        "value": false
+      },
+      {
+        "text": "Adressreservierung 10.0.0.0/8 ist für private Netze",
+        "value": true
+      },
+      {
+        "text": "Adressreservierung 172.168.0.0/16 ist für private Netze",
+        "value": false
+      },
+      {
+        "text": "Adressreservierung ::1/128 ist für private Netze",
+        "value": false
+      },
+      {
+        "text": "Adressreservierung 2000::/3 ist für private Netze",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf IPv6 Adressen zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "32 Bit lang",
+        "value": false
+      },
+      {
+        "text": "typische Darstellung: 4 Bytes (Oktetts)",
+        "value": false
+      },
+      {
+        "text": "128 Bit lang",
+        "value": true
+      },
+      {
+        "text": "Adressreservierung 10.0.0.0/8 ist für private Netze",
+        "value": false
+      },
+      {
+        "text": "Adressreservierung 172.168.0.0/16 ist für private Netze",
+        "value": false
+      },
+      {
+        "text": "Adressreservierung ::1/128 ist für Loopback Addressen",
+        "value": true
+      },
+      {
+        "text": "Adressreservierung 2000::/3 ist für private Netze",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Für welche IP-Adressen kann das Neighbor Discovery Protocol (NDP) eingesetzt werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "nur IPv4",
+        "value": false
+      },
+      {
+        "text": "nur IPv6",
+        "value": true
+      },
+      {
+        "text": "IPv4 und IPv6",
+        "value": false
+      },
+      {
+        "text": "keine davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "statisches Routing ist sinnvoll, wenn sich ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Routen fast nie verändern",
+        "value": true
+      },
+      {
+        "text": "Links im Netz häufig ändern",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Intra-AS Routing zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "über mehrere AS, bildet das Internet",
+        "value": false
+      },
+      {
+        "text": "innerhalb eines automomen Systems",
+        "value": true
+      },
+      {
+        "text": "legt ggf. mehr Wert auf eine Policy, als auf Performance",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll OSPF kann eingesetzt werden",
+        "value": true
+      },
+      {
+        "text": "Routing Protokoll IS-IS kann eingesetzt werden",
+        "value": true
+      },
+      {
+        "text": "Routing Protokoll BGP kann eingesetzt werden",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll PGP kann eingesetzt werden",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll EIGRP kann eingesetzt werden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Inter-AS Routing zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "über mehrere AS, bildet das Internet",
+        "value": true
+      },
+      {
+        "text": "innerhalb eines automomen Systems",
+        "value": false
+      },
+      {
+        "text": "legt ggf. mehr Wert auf eine Policy, als auf Performance",
+        "value": true
+      },
+      {
+        "text": "Routing Protokoll OSPF kann eingesetzt werden",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll IS-IS kann eingesetzt werden",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll BGP kann eingesetzt werden",
+        "value": true
+      },
+      {
+        "text": "Routing Protokoll PGP kann eingesetzt werden",
+        "value": false
+      },
+      {
+        "text": "Routing Protokoll EIGRP kann eingesetzt werden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf ICMP zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Unterstützung der externen Deaktivierung einer Firewall",
+        "value": false
+      },
+      {
+        "text": "Unterstützung der Diagnose für Hilfsprogramme wie ping oder traceroute",
+        "value": true
+      },
+      {
+        "text": "Unterstützung der Aufzeichnung von Timestamps",
+        "value": true
+      },
+      {
+        "text": "Unterstützung der Authentifizierung von Benutzern",
+        "value": false
+      },
+      {
+        "text": "Verwaltung von Routing Tabellen",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche der Teilschichten gibt es bei der Sicherungsschicht?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "nur 'Logical Link Control'",
+        "value": false
+      },
+      {
+        "text": "nur 'Medium Access Control'",
+        "value": false
+      },
+      {
+        "text": "'Logical Link Control' und 'Medium Access Control'",
+        "value": true
+      },
+      {
+        "text": "keine davon",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Aus wie viel Bit besteht eine MAC Adresse?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "24",
+        "value": false
+      },
+      {
+        "text": "48",
+        "value": true
+      },
+      {
+        "text": "64",
+        "value": false
+      },
+      {
+        "text": "96",
+        "value": false
+      },
+      {
+        "text": "128",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Vorteile bieten VLANs?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Abbildung der Unternehmensstruktur",
+        "value": true
+      },
+      {
+        "text": "Trennung von Broadcastdomänen",
+        "value": true
+      },
+      {
+        "text": "Verschlüsseltes Paketrouting",
+        "value": false
+      },
+      {
+        "text": "Effizienz",
+        "value": true
+      },
+      {
+        "text": "Sicherheit",
+        "value": true
+      },
+      {
+        "text": "keine",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Bereiche gibt es für die Strukturierung lokaler Netze?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Primär-Bereich",
+        "value": true
+      },
+      {
+        "text": "Sekundär-Bereich",
+        "value": true
+      },
+      {
+        "text": "Tertiär-Bereich",
+        "value": true
+      },
+      {
+        "text": "Teritär-Bereich",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche WLAN Standards verwenden 5 GHz?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "802.11b/g/n",
+        "value": false
+      },
+      {
+        "text": "802.11a/n",
+        "value": true
+      },
+      {
+        "text": "802.11ac",
+        "value": true
+      },
+      {
+        "text": "802.11ad",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welcher Technologie(n) können virtuelle WAN Verbindungen aufgebaut werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "MPLS",
+        "value": true
+      },
+      {
+        "text": "WDM",
+        "value": false
+      },
+      {
+        "text": "VPN",
+        "value": true
+      },
+      {
+        "text": "DSL",
+        "value": false
+      },
+      {
+        "text": "SFP",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie können Schleifen in LAN Topologien vermieden werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "verkabeln von Switches in Schleifen unterlassen",
+        "value": true
+      },
+      {
+        "text": "einsetzen des Spanning Tree Protocol (STP)",
+        "value": true
+      },
+      {
+        "text": "einsetzen von Shortest Path Bridging",
+        "value": true
+      },
+      {
+        "text": "einsetzen von Carrier Ethernet",
+        "value": false
+      },
+      {
+        "text": "einsetzen von Single Direction Routing (SDR)",
+        "value": false
+      },
+      {
+        "text": "einsetzen von Multichassis Link Aggregation (MLAG)",
+        "value": true
+      },
+      {
+        "text": "einsetzen von Multifunctional Local Area Generation (MLAG)",
+        "value": false
+      }
+    ]
+  }
+]

@@ -25,13 +25,13 @@ Example:
 "tests": [
     {
       "title": "Programmiermethoden und Werkzeuge - Vorübung",
-      "questions": "assets/progmeth1.json",
+      "questions": "assets/tests/progmeth1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "progmeth1"
     },
     {
       "title": "My custom test",
-      "questions": "assets/myQuestionnaire.json",
+      "questions": "assets/tests/myQuestionnaire.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "customTestId"
     }
@@ -57,7 +57,7 @@ There are already three possible question formats:
 - the question requires the keyword `orientation` in the question to be `horizontal` or `vertical`
   - with more than two words per answer the vertical orientation is recommended
 
-Example of three different question definitions in `assets/myQuestionnaire.json`:
+Example of three different question definitions in `assets/tests/myQuestionnaire.json`:
 ```json
 [
   {

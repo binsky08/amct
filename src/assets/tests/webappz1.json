@@ -1,0 +1,539 @@
+[
+  {
+    "name": "Welcher ist der HTTP Standardport?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "443",
+        "value": false
+      },
+      {
+        "text": "800",
+        "value": false
+      },
+      {
+        "text": "80",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welcher ist der HTTPS Standardport?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "443",
+        "value": true
+      },
+      {
+        "text": "800",
+        "value": false
+      },
+      {
+        "text": "80",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche URL Schemata sind valide?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "https://binsky.org/?foo=Bert#content",
+        "value": true
+      },
+      {
+        "text": "ftp://storage.myhoster.de/",
+        "value": true
+      },
+      {
+        "text": "https://www.mydomain.de:8080",
+        "value": true
+      },
+      {
+        "text": "http://example.org:80&foo=Bert&enable=1",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Ab welcher HTTP Version sind persistente Verbindungen möglich?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "HTTP/1.0",
+        "value": false
+      },
+      {
+        "text": "HTTP/1.1",
+        "value": true
+      },
+      {
+        "text": "HTTP/1.2",
+        "value": false
+      },
+      {
+        "text": "HTTP/2",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser HTTP Request Methoden gibt es nicht?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "POST",
+        "value": false
+      },
+      {
+        "text": "PUT",
+        "value": false
+      },
+      {
+        "text": "EDIT",
+        "value": true
+      },
+      {
+        "text": "GET",
+        "value": false
+      },
+      {
+        "text": "OPTIONS",
+        "value": false
+      },
+      {
+        "text": "TRACE",
+        "value": false
+      },
+      {
+        "text": "PATCH",
+        "value": false
+      },
+      {
+        "text": "UPDATE",
+        "value": true
+      },
+      {
+        "text": "DELETE",
+        "value": false
+      },
+      {
+        "text": "REMOVE",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welcher HTTP Status Code Typ zeigt Server Errors an?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "1xx",
+        "value": false
+      },
+      {
+        "text": "3xx",
+        "value": false
+      },
+      {
+        "text": "4xx",
+        "value": false
+      },
+      {
+        "text": "5xx",
+        "value": true
+      },
+      {
+        "text": "6xx",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Elemente sind valide <html> Kindelemente?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "<body>",
+        "value": true
+      },
+      {
+        "text": "<html>",
+        "value": false
+      },
+      {
+        "text": "<footer>",
+        "value": true
+      },
+      {
+        "text": "<head>",
+        "value": true
+      },
+      {
+        "text": "<div>",
+        "value": true
+      },
+      {
+        "text": "<line>",
+        "value": false
+      },
+      {
+        "text": "<h0>",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie wird in HTML der Buchstabe 'ü' dargestellt, wenn kein UTF-8 verwendet wird?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "ü",
+        "value": false
+      },
+      {
+        "text": "&ue",
+        "value": false
+      },
+      {
+        "text": "&Uuml;",
+        "value": false
+      },
+      {
+        "text": "&Uuml",
+        "value": false
+      },
+      {
+        "text": "&uuml;",
+        "value": true
+      },
+      {
+        "text": "&uuml",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Tag wird in HTML eine geordnete Liste verwendet?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "<ulist>",
+        "value": false
+      },
+      {
+        "text": "<olist>",
+        "value": false
+      },
+      {
+        "text": "<gl>",
+        "value": false
+      },
+      {
+        "text": "<ul>",
+        "value": false
+      },
+      {
+        "text": "<ol>",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie beginnen Kommentare in HTML Code?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "<comment>",
+        "value": false
+      },
+      {
+        "text": "<-->",
+        "value": false
+      },
+      {
+        "text": "<--",
+        "value": false
+      },
+      {
+        "text": "<!--",
+        "value": true
+      },
+      {
+        "text": "//",
+        "value": false
+      },
+      {
+        "text": "#",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Sortiere diese Einträge so, wie du in HTML eine Tabelle mit nur einer Spalte erstellen würdest.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "<table>",
+        "value": true
+      },
+      {
+        "text": "<tbody>",
+        "value": true
+      },
+      {
+        "text": "<tr>",
+        "value": true
+      },
+      {
+        "text": "<td>",
+        "value": true
+      },
+      {
+        "text": "Ich bin eine Spalte",
+        "value": true
+      },
+      {
+        "text": "</td>",
+        "value": true
+      },
+      {
+        "text": "</tr>",
+        "value": true
+      },
+      {
+        "text": "</tbody>",
+        "value": true
+      },
+      {
+        "text": "</table>",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Formular Input Typen gibt es in HTML?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "text",
+        "value": true
+      },
+      {
+        "text": "test",
+        "value": false
+      },
+      {
+        "text": "mail",
+        "value": false
+      },
+      {
+        "text": "email",
+        "value": true
+      },
+      {
+        "text": "name",
+        "value": false
+      },
+      {
+        "text": "password",
+        "value": true
+      },
+      {
+        "text": "number",
+        "value": true
+      },
+      {
+        "text": "int",
+        "value": false
+      },
+      {
+        "text": "float",
+        "value": false
+      },
+      {
+        "text": "submit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sortiere diese Einträge so, wie ein (vereinfachter) HTTP Request über TCP funktioniert.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Client -> Server (Hallo)",
+        "value": true
+      },
+      {
+        "text": "Client <- Server (Hallo zurück)",
+        "value": true
+      },
+      {
+        "text": "Client -> Server (Gib mir die Webseite amct.binsky.org)",
+        "value": true
+      },
+      {
+        "text": "Client <- Server (Webseite und Status Code 200)",
+        "value": true
+      },
+      {
+        "text": "Client -> Server (Tschüss)",
+        "value": true
+      },
+      {
+        "text": "Client <- Server (Tschüss zurück)",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sortiere den Satz!",
+    "type": "dropList",
+    "orientation": "horizontal",
+    "answers": [
+      {
+        "text": "CSS",
+        "value": true
+      },
+      {
+        "text": "is",
+        "value": true
+      },
+      {
+        "text": "awesome",
+        "value": true
+      },
+      {
+        "text": "!",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche CSS Optionen ändern die Hintergrundfarbe?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "background-color: #e6e6e6",
+        "value": true
+      },
+      {
+        "text": "background-color: #000000",
+        "value": true
+      },
+      {
+        "text": "<bg color='black'>",
+        "value": false
+      },
+      {
+        "text": "background: #abcdef",
+        "value": true
+      },
+      {
+        "text": "background: blue",
+        "value": true
+      },
+      {
+        "text": "color: #010101",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was führt mit CSS dazu, dass ein Element nicht mehr sichtbar ist?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "visibility: hidden;",
+        "value": true
+      },
+      {
+        "text": "visibility: none;",
+        "value": false
+      },
+      {
+        "text": "display: hide;",
+        "value": false
+      },
+      {
+        "text": "display: none;",
+        "value": true
+      },
+      {
+        "text": "display: block;",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welcher CSS Code erzeugt grünen Text in div Tags?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": ".div {color:green;}",
+        "value": false
+      },
+      {
+        "text": "div {color:green;}",
+        "value": true
+      },
+      {
+        "text": "div::tag {color:green;}",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welcher CSS Code erzeugt gelben Text für Links, welche man mit dem Mauszeiger überfährt?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": ".a:hover {color:yellow;}",
+        "value": false
+      },
+      {
+        "text": ".a {color:yellow;}",
+        "value": false
+      },
+      {
+        "text": "a:hover {color:yellow;}",
+        "value": true
+      },
+      {
+        "text": "a {color:yellow;}",
+        "value": false
+      },
+      {
+        "text": ".a::hover {color:yellow;}",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie kann man mit CSS ein Element immer an der gleichen Position halten?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "position: static;",
+        "value": false
+      },
+      {
+        "text": "position: relative;",
+        "value": false
+      },
+      {
+        "text": "position: absolute;",
+        "value": false
+      },
+      {
+        "text": "position: fixed;",
+        "value": true
+      }
+    ]
+  }
+]
