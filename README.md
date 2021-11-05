@@ -53,9 +53,12 @@ There are already three possible question formats:
 ### Drop lists
 - use the value `dropList` as type in myQuestionnaire.json
 - the order of the answers in json corresponds to the order accepted as correct in the test
-- in the current version all answers require the value to be true
 - the question requires the keyword `orientation` in the question to be `horizontal` or `vertical`
   - with more than two words per answer the vertical orientation is recommended
+- in the current version all answers of a default drop list require the value to be true unless the `useDisabled` option is used
+- to start with all answers in a disabled box add `"useDisabled": true` to the question
+  - set value to `false` for answers which has to be disabled
+  - only the order of activated responses (with value = true) is checked!
 
 Example of three different question definitions in `assets/tests/myQuestionnaire.json`:
 ```json
@@ -108,6 +111,30 @@ Example of three different question definitions in `assets/tests/myQuestionnaire
       {
         "text": "Second entry",
         "value": true
+      },
+      {
+        "text": "Third entry",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sort these entries and disable the bad ones!",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": true,
+    "answers": [
+      {
+        "text": "First entry",
+        "value": true
+      },
+      {
+        "text": "Second entry",
+        "value": true
+      },
+      {
+        "text": "Thrölfth entry",
+        "value": false
       },
       {
         "text": "Third entry",

@@ -38,11 +38,27 @@
             {{answer.text}}
           </mat-radio-button>
         </mat-radio-group>
-        <div *ngIf="question.type == 'dropList'" cdkDropList cdkDropListOrientation="{{question.orientation}}"
-             class="dropList {{question.orientation}}" (cdkDropListDropped)="drop(i, $event)">
+        <div *ngIf="question.type == 'dropList' && (question.useDisabled === undefined || !question.useDisabled)" cdkDropList cdkDropListOrientation="{{question.orientation}}"
+             class="dropList {{question.orientation}}" (cdkDropListDropped)="drop(i, $event, false)">
           <div class="dropListBox"
                *ngFor="let answer of dropListSource[this.getDropListSourcePosition(i)].answers; let j = index" cdkDrag
                [style]="showSolution ? (checkDropListSolution(questions[i], answer, i, j) ? 'color: green' : 'color: red') : ''">{{answer.text}}</div>
+        </div>
+        <div *ngIf="question.type == 'dropList' && question.useDisabled !== undefined && question.useDisabled">
+          <div cdkDropList cdkDropListOrientation="{{question.orientation}}"
+               class="dropList {{question.orientation}} double dropListEnabled" (cdkDropListDropped)="drop(i, $event, false)"
+               #enabledDropList="cdkDropList" [cdkDropListConnectedTo]="[disabledDropList]">
+            <div class="dropListBox"
+                 *ngFor="let answer of dropListSource[this.getDropListSourcePosition(i)].answers; let j = index" cdkDrag
+                 [style]="showSolution ? (checkDropListSolution(questions[i], answer, i, j, true) ? 'color: green' : 'color: red') : ''">{{answer.text}}</div>
+          </div>
+          <div cdkDropList cdkDropListOrientation="{{question.orientation}}"
+               class="dropList {{question.orientation}} double dropListDisabled" (cdkDropListDropped)="drop(i, $event, true)"
+               #disabledDropList="cdkDropList" [cdkDropListConnectedTo]="[enabledDropList]">
+            <div class="dropListBox"
+                 *ngFor="let answer of dropListSource[this.getDropListSourcePosition(i)].disabledAnswers; let j = index" cdkDrag
+                 [style]="showSolution ? (!answer.value ? 'color: green' : 'color: red') : ''">{{answer.text}}</div>
+          </div>
         </div>
       </mat-card-content>
       <hr *ngIf="i < questions.length-1" class="mat-card-hr">
