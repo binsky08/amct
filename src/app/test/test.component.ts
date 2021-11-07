@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../config.service';
 import { ITestConfig } from '../ITestConfig';
 import { ActivatedRoute } from '@angular/router';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-test',
@@ -96,7 +96,13 @@ export class TestComponent implements OnInit {
       if (this.questions[i].type === 'dropList') {
         const tmpQuestion: IQuestion = JSON.parse(JSON.stringify(this.questions[i]));  // clone array
         tmpQuestion.id = i;
-        tmpQuestion.answers = this.randomizeAnswers(tmpQuestion.answers);
+        if (this.questions[i].useDisabled !== undefined && this.questions[i].useDisabled === true) {
+          tmpQuestion.disabledAnswers = this.randomizeAnswers(tmpQuestion.answers);
+          // @ts-ignore
+          tmpQuestion.answers = [];
+        } else {
+          tmpQuestion.answers = this.randomizeAnswers(tmpQuestion.answers);
+        }
         this.dropListSource.push(tmpQuestion);
       } else {
         this.radioAnswers[i] = '';
@@ -134,8 +140,28 @@ export class TestComponent implements OnInit {
     return null;
   }
 
-  drop(questionPosition: number, event: CdkDragDrop<string[]>): void {
-    moveItemInArray(this.dropListSource[this.getDropListSourcePosition(questionPosition)].answers, event.previousIndex, event.currentIndex);
+  drop(questionPosition: number, event: CdkDragDrop<string[]>, dropToDisabled: boolean): void {
+    if (event.previousContainer === event.container) {
+      if (dropToDisabled === true) {
+        // tslint:disable-next-line:max-line-length
+        moveItemInArray(this.dropListSource[this.getDropListSourcePosition(questionPosition)].disabledAnswers, event.previousIndex, event.currentIndex);
+      } else {
+        // tslint:disable-next-line:max-line-length
+        moveItemInArray(this.dropListSource[this.getDropListSourcePosition(questionPosition)].answers, event.previousIndex, event.currentIndex);
+      }
+    } else {  // dropList with disabled items
+      if (dropToDisabled === true) {
+        transferArrayItem(this.dropListSource[this.getDropListSourcePosition(questionPosition)].answers,
+          this.dropListSource[this.getDropListSourcePosition(questionPosition)].disabledAnswers,
+          event.previousIndex,
+          event.currentIndex);
+      } else {
+        transferArrayItem(this.dropListSource[this.getDropListSourcePosition(questionPosition)].disabledAnswers,
+          this.dropListSource[this.getDropListSourcePosition(questionPosition)].answers,
+          event.previousIndex,
+          event.currentIndex);
+      }
+    }
   }
 
   solve(): void {
@@ -161,11 +187,33 @@ export class TestComponent implements OnInit {
       }
       if (question.type === 'dropList') {
         const orderedList = this.dropListSource[this.getDropListSourcePosition(i)];
+        let valueTrueIndexForUseDisabled = -1;
         for (let j = 0; j < question.answers.length; j++) {
           this.possibleAnswersCounter++;
-          if (question.answers[j].text === orderedList.answers[j].text && question.answers[j].value && orderedList.answers[j].value) {
-            // right position in orderedList and the answer is marked as possible with value = true
-            this.rightAnswers++;
+
+          if (question.useDisabled) {
+            if (question.answers[j].value) {
+              valueTrueIndexForUseDisabled++;
+
+              // const orderedAnswer = question.answers[j];
+              const orderedAnswer = this.getAllAnswersWithTrueValue(orderedList.answers)[valueTrueIndexForUseDisabled];
+              if (valueTrueIndexForUseDisabled >= 0 && orderedAnswer !== undefined &&
+                this.checkDropListSolution(question, orderedAnswer, i, undefined, true)) {
+                this.rightAnswers++;
+              }
+            } else {
+              // answer is false and should be in the disabledAnswers list. check this here.
+              for (const disabledAnswer of orderedList.disabledAnswers) {
+                if (disabledAnswer.text === question.answers[j].text) {
+                  this.rightAnswers++;
+                }
+              }
+            }
+          } else {
+            if (question.answers[j].value && orderedList.answers[j].value && question.answers[j].text === orderedList.answers[j].text) {
+              // right position in orderedList and the answer is marked as possible with value = true
+              this.rightAnswers++;
+            }
           }
         }
       }
@@ -189,8 +237,43 @@ export class TestComponent implements OnInit {
       (!answer.value && !this.checkboxAnswers[id][innerId]);
   }
 
-  checkDropListSolution(question: IQuestion, answer: IAnswer, id: number, index: number): boolean {
+  getPositionIndexIgnoringFalseValues(text: string, answers: [IAnswer]): number {
+    let trueValuesCounter = -1;
+    for (const answer of answers) {
+      if (answer.value) {
+        trueValuesCounter++;
+      }
+      if (answer.text === text) {
+        break;
+      }
+    }
+    return trueValuesCounter;
+  }
+
+  getAllAnswersWithTrueValue(answers: [IAnswer]): [IAnswer] {
+    // @ts-ignore
+    const arr: [IAnswer] = [];
+    for (const answer of answers) {
+      if (answer.value) {
+        arr.push(answer);
+      }
+    }
+    return arr;
+  }
+
+  checkDropListSolution(question: IQuestion, answer: IAnswer, id: number, index: number, useDisabledState: boolean = false): boolean {
     const orderedList = this.dropListSource[this.getDropListSourcePosition(id)];
+
+    if (useDisabledState === true) {
+      for (const originalAnswer of question.answers) {
+        if (originalAnswer.text === answer.text) {
+          return originalAnswer.value && this.getPositionIndexIgnoringFalseValues(answer.text, question.answers)
+            === this.getPositionIndexIgnoringFalseValues(answer.text, orderedList.answers);
+        }
+      }
+      return false;
+    }
+
     return question.answers[index].text === orderedList.answers[index].text
       && question.answers[index].value && orderedList.answers[index].value;
   }
