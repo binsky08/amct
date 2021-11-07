@@ -1,0 +1,601 @@
+[
+  {
+    "name": "Wie nennt sich die für variable Codelänge gängige Codierung, bei der ein Baum gebildet wird?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Moore-Codierung",
+        "value": false
+      },
+      {
+        "text": "Mealy-Codierung",
+        "value": false
+      },
+      {
+        "text": "Hoffmann-Codierung",
+        "value": false
+      },
+      {
+        "text": "Huffman-Codierung",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie hoch ist die Wahrscheinlichkeit, dass die Zahlen 5 bis 7 im Intervall ]0x0, 0xF[ vorkommen?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "13,37%",
+        "value": false
+      },
+      {
+        "text": "12,5%",
+        "value": false
+      },
+      {
+        "text": "100%",
+        "value": true
+      },
+      {
+        "text": "6,25%",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie wird 42 im Dezimalsystem dargestellt?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "42",
+        "value": true
+      },
+      {
+        "text": "2A",
+        "value": false
+      },
+      {
+        "text": "52",
+        "value": false
+      },
+      {
+        "text": "zwanzehnunddrölf",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie wird 42 im Hexadezimalsystem dargestellt?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "42",
+        "value": false
+      },
+      {
+        "text": "2A",
+        "value": true
+      },
+      {
+        "text": "20",
+        "value": false
+      },
+      {
+        "text": "zwanzehnunddrölf",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie wird 42 im Binärsystem dargestellt?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "110110",
+        "value": false
+      },
+      {
+        "text": "101010",
+        "value": true
+      },
+      {
+        "text": "011011",
+        "value": false
+      },
+      {
+        "text": "1o11o1",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche ist die Dezimaldarstellung der Zahl 0x539?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "123",
+        "value": false
+      },
+      {
+        "text": "1337",
+        "value": true
+      },
+      {
+        "text": "1024",
+        "value": false
+      },
+      {
+        "text": "2147483647",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Zeichen wird ein NICHT-Gatter versehen?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "≥1",
+        "value": false
+      },
+      {
+        "text": "≤1",
+        "value": false
+      },
+      {
+        "text": "=1",
+        "value": false
+      },
+      {
+        "text": "1",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Zeichen wird ein ODER-Gatter versehen?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "≥1",
+        "value": true
+      },
+      {
+        "text": "≤1",
+        "value": false
+      },
+      {
+        "text": "=1",
+        "value": false
+      },
+      {
+        "text": "1",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Zeichen wird ein exklusiv-ODER-Gatter(XOR) versehen?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "≥1",
+        "value": false
+      },
+      {
+        "text": "≤1",
+        "value": false
+      },
+      {
+        "text": "=1",
+        "value": true
+      },
+      {
+        "text": "1",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchem Zeichen wird ein UND-Gatter versehen?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "≥1",
+        "value": false
+      },
+      {
+        "text": ">1",
+        "value": false
+      },
+      {
+        "text": "≠1",
+        "value": false
+      },
+      {
+        "text": "&",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie darf ein NICHT an ein anderes Gatter angefügt werden?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Ein kleines Herzchen oben links.",
+        "value": false
+      },
+      {
+        "text": "Ein großes Herz am jeweiligen Eingang/Ausgang.",
+        "value": false
+      },
+      {
+        "text": "Ein Halbkreis/Kringel am jeweiligen Eingang/Ausgang.",
+        "value": true
+      },
+      {
+        "text": "Ein Sternchen am jeweiligen Eingang/Ausgang.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie nennt sich das folgende boolsche Gesetz? \n\n x + 0 = x\n x ⋅ 1 = x",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Identität",
+        "value": true
+      },
+      {
+        "text": "Idempotenz",
+        "value": false
+      },
+      {
+        "text": "Anonymität",
+        "value": false
+      },
+      {
+        "text": "Absorption 2",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie nennt sich das folgende boolsche Gesetz? \n\n x + y = y + x\n x ⋅ y = y ⋅ x",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Kommunikationstechnik",
+        "value": false
+      },
+      {
+        "text": "Silentivgesetz",
+        "value": false
+      },
+      {
+        "text": "NaN",
+        "value": false
+      },
+      {
+        "text": "Kommutativgesetz",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie nennt sich das folgende boolsche Gesetz?\n\n(x + y ) + z = x + (y +z)\n(x ⋅ y ) ⋅ z = x ⋅ (y ⋅ z)",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Asozialitätsgesetz",
+        "value": false
+      },
+      {
+        "text": "Assoziativgesetz",
+        "value": true
+      },
+      {
+        "text": "Distributivgesetz",
+        "value": false
+      },
+      {
+        "text": "Konsensus",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie nennt sich das folgende boolsche Gesetz?\n\nx ⋅ y + x ⋅ z = x ⋅ (y + z)\n(x + y) ⋅ (x + z) = x + y ⋅ z",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Distributivgesetz",
+        "value": true
+      },
+      {
+        "text": "Assoziativgesetz",
+        "value": false
+      },
+      {
+        "text": "Grundgesetz",
+        "value": false
+      },
+      {
+        "text": "Additivgesetz",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Basis(Radix) hat das Hexalsystem",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "6",
+        "value": true
+      },
+      {
+        "text": "16",
+        "value": false
+      },
+      {
+        "text": "60",
+        "value": false
+      },
+      {
+        "text": "-6",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wie lautet die Dezimaldarstellung der Zahl 0xF?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "15",
+        "value": true
+      },
+      {
+        "text": "16",
+        "value": false
+      },
+      {
+        "text": "17",
+        "value": false
+      },
+      {
+        "text": "FÜNF",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Darstellungsformen gibt es für ganzzahlige Binärzahlen?",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "Vorzeichen-Betrag",
+        "value": true
+      },
+      {
+        "text": "Dreierkompliment",
+        "value": false
+      },
+      {
+        "text": "Einerkomplement",
+        "value": true
+      },
+      {
+        "text": "Zweierkomplement",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie wird eine (Dezimal-) Kommazahl als Festkommazahl dargestellt/ermittelt?",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answer": [
+      {
+        "text": "π ⋅ 2ª, wenn a = Nachkommastellen",
+        "value": true
+      },
+      {
+        "text": "round(Zahl) (runden einer Zahl zur nächsten ganzen Zahl)",
+        "value": true
+      },
+      {
+        "text": "Konvertieren ins Binärsystem",
+        "value": true
+      },
+      {
+        "text": "Verschiebe Zahl um a Bit nach rechts.(((Komma nach links)))",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit welcher Wortbreite ist laut IEEE 754r eine Gleitkommazahl vom Typ Double definiert?",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "8 Bit",
+        "value": false
+      },
+      {
+        "text": "24 Bit",
+        "value": false
+      },
+      {
+        "text": "64 Bit",
+        "value": true
+      },
+      {
+        "text": "256 Bit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Klassen von Primimplikanten gibt es?",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "Kernprimimplikant",
+        "value": true
+      },
+      {
+        "text": "Abzählbarer Primimplikant",
+        "value": false
+      },
+      {
+        "text": "Absolut eliminierbarer Primimplikant",
+        "value": true
+      },
+      {
+        "text": "definitiv eliminierbarer Primimplikant",
+        "value": false
+      },
+      {
+        "text": "relativ eliminierbarer Primimplikant",
+        "value": true
+      },
+      {
+        "text": "unabhängiger Primimplikant",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wozu nutzt man Primimplikanten?",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "Vereinfachung eines Terms.",
+        "value": true
+      },
+      {
+        "text": "Zur Minimierung eines Terms",
+        "value": true
+      },
+      {
+        "text": "Erstellen eines Terms mit maximaler Ordnung",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "KV-Diagramme nutzt man zur...",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "... Beschäftigung bei Langeweile.",
+        "value": false
+      },
+      {
+        "text": "... graphischen Vereinfachung eines Terms.",
+        "value": true
+      },
+      {
+        "text": "... Darstellung des Minterms/Maxterms.",
+        "value": true
+      },
+      {
+        "text": "... Erstellung einer Wahrheitstabelle.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "In welchen Größen darf man Primimplikanten ermitteln? (x^n bedeutet: x hoch n)",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "2^n",
+        "value":true
+      },
+      {
+        "text": "3^n",
+        "value": true
+      },
+      {
+        "text": "4^n",
+        "value": true
+      },
+      {
+        "text": "x^n (x bezeichnet die Anzahl der potentiellen Zustände)",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was bedeutet der Zustand \"Don't Care\"?",
+    "type": "checkbox",
+    "answer": [
+      {
+        "text": "Einen dritten Wert.",
+        "value": false
+      },
+      {
+        "text": "Wahlweise 0 oder 1.",
+        "value": true
+      },
+      {
+        "text": "Redundanz/Freistelle in der Funktion.",
+        "value": true
+      },
+      {
+        "text": "Roboter mit Senf.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was \"macht\" ein Decoder?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Für eine Eingangskombination mehrere Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für jede Eingangskombination mehrere Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für jede Eingangskombination exakt einen Ausgang schalten. (one hot code)",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was \"macht\" ein Multiplexer?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Für mehrere(m) Eingängs mehrere Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für mehrere(m) Eingänge einen Ausgang schalten.",
+        "value": true
+      },
+      {
+        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für jede Eingangskombination exakt einen Ausgang schalten. (one hot code)",
+        "value": false
+      }
+    ]
+  }
+]
