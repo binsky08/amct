@@ -516,7 +516,7 @@
     "answer": [
       {
         "text": "2^n",
-        "value":true
+        "value": true
       },
       {
         "text": "3^n",
@@ -573,6 +573,28 @@
       {
         "text": "Für jede Eingangskombination exakt einen Ausgang schalten. (one hot code)",
         "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was \"macht\" ein Multiplexer?",
+    "type": "radio",
+    "answer": [
+      {
+        "text": "Für mehrere(m) Eingängs mehrere Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für mehrere(m) Eingänge einen Ausgang schalten.",
+        "value": true
+      },
+      {
+        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten.",
+        "value": false
+      },
+      {
+        "text": "Für jede Eingangskombination exakt einen Ausgang schalten. (one hot code)",
+        "value": false
       }
     ]
   },
