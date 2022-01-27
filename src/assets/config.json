@@ -32,7 +32,7 @@
       "uniqueIdentifier": "soeng1"
     },
     {
-      "title": "Digitaltechnik und Rechnersysteme(WiSe 21/22)",
+      "title": "Digitaltechnik und Rechnersysteme (WiSe 21/22)",
       "questions": "assets/tests/digitech.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "digitech"
