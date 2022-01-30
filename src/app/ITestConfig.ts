@@ -3,4 +3,6 @@ export interface ITestConfig {
   questions: string;
   numberOfRandomQuestions: number;
   uniqueIdentifier: string;
+  contributor: string;
+  contributorUrl: string;
 }

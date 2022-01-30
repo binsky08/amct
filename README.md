@@ -20,6 +20,8 @@ Set the relative path to your custom questions configuration file at `questions`
 
 The `uniqueIdentifier` is used as url parameter to easily share the test.
 
+The `contributor` and `contributorUrl` fields are optional.
+
 Example:
 ```json
 "tests": [
@@ -33,7 +35,9 @@ Example:
       "title": "My custom test",
       "questions": "assets/tests/myQuestionnaire.json",
       "numberOfRandomQuestions": 5,
-      "uniqueIdentifier": "customTestId"
+      "uniqueIdentifier": "customTestId",
+      "contributor": "myNickName",
+      "contributorUrl": "https://optional-url-to-my-website.com"
     }
 ]
 ```
@@ -44,9 +48,10 @@ A question must consist of the following elements
 - name
 - type
 - answers
+- orientation (only required for the dropList type)
 
 A question can contain the following additional elements
-- orientation (only required for the dropList type)
+- useDisabled (optional; to use with the dropList type)
 - description (optional; shows preformatted text in a html pre element)
 
 ## Question format

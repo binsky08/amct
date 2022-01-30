@@ -22,6 +22,8 @@ export class TestComponent implements OnInit {
   checkboxAnswers: [[boolean]];
   showSolution = false;
   title = '';
+  contributor = null;
+  contributorUrl = null;
   rightAnswers: number;
   possibleAnswersCounter: number;
   startTest = false;
@@ -56,6 +58,12 @@ export class TestComponent implements OnInit {
         this.loadedTestConfig = test;
         this.title = this.loadedTestConfig.title;
         this.numberOfRandomQuestions = this.loadedTestConfig.numberOfRandomQuestions;
+        if (this.loadedTestConfig.contributor && this.loadedTestConfig.contributor.trim() !== '') {
+          this.contributor = this.loadedTestConfig.contributor.trim();
+          if (this.loadedTestConfig.contributorUrl && this.loadedTestConfig.contributorUrl.trim() !== '') {
+            this.contributorUrl = this.loadedTestConfig.contributorUrl.trim();
+          }
+        }
         this.config.getJSON(this.loadedTestConfig.questions).subscribe(data => {
           this.questionPool = data;
         });

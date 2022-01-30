@@ -17,6 +17,10 @@
       Starte mit allen verfügbaren Fragen
     </button>
   </mat-card>
+  <div *ngIf="startTest && contributor" fxFlexAlign="center" style="width: 60%">
+    <span *ngIf="!contributorUrl" style="float: right">Contributor: {{contributor}}</span>
+    <span *ngIf="contributorUrl" style="float: right">Contributor: <a href="{{contributorUrl}}">{{contributor}}</a></span>
+  </div>
   <mat-card *ngIf="startTest">
     <div *ngFor="let question of questions; let i = index">
       <mat-card-content>
