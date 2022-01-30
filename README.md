@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Configure custom questions
+## Configure custom tests
 
 Open `assets/config.json` and add a custom test config to `tests`.
 
@@ -38,6 +38,17 @@ Example:
 ]
 ```
 
+## Configure custom questions
+
+A question must consist of the following elements
+- name
+- type
+- answers
+
+A question can contain the following additional elements
+- orientation (only required for the dropList type)
+- description (optional; shows preformatted text in a html pre element)
+
 ## Question format
 
 There are already three possible question formats:
@@ -60,11 +71,13 @@ There are already three possible question formats:
   - set value to `false` for answers which has to be disabled
   - only the order of activated responses (with value = true) is checked!
 
-Example of three different question definitions in `assets/tests/myQuestionnaire.json`:
+## Question examples
+Example of possible question definitions in `assets/tests/myQuestionnaire.json`:
 ```json
 [
   {
     "name": "What is 1+1?",
+    "description": "Example solution method: <script>alert(1+1);</script>?",
     "type": "radio",
     "answers": [
       {
