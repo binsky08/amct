@@ -60,7 +60,7 @@
         "value": false
       },
       {
-        "text": "zwanzehnunddrölf",
+        "text": "011011",
         "value": false
       }
     ]
@@ -82,7 +82,7 @@
         "value": false
       },
       {
-        "text": "zwanzehnunddrölf",
+        "text": "011011",
         "value": false
       }
     ]
@@ -242,7 +242,8 @@
     ]
   },
   {
-    "name": "Wie nennt sich das folgende boolsche Gesetz? \n\n x + 0 = x\n x ⋅ 1 = x",
+    "name": "Wie nennt sich das folgende boolsche Gesetz?",
+    "description": "x + 0 = x\nx ⋅ 1 = x",
     "type": "radio",
     "answers": [
       {
@@ -264,7 +265,8 @@
     ]
   },
   {
-    "name": "Wie nennt sich das folgende boolsche Gesetz? \n\n x + y = y + x\n x ⋅ y = y ⋅ x",
+    "name": "Wie nennt sich das folgende boolsche Gesetz?",
+    "description": "x + y = y + x\n x ⋅ y = y ⋅ x",
     "type": "radio",
     "answers": [
       {
@@ -286,7 +288,8 @@
     ]
   },
   {
-    "name": "Wie nennt sich das folgende boolsche Gesetz?\n\n(x + y ) + z = x + (y +z)\n(x ⋅ y ) ⋅ z = x ⋅ (y ⋅ z)",
+    "name": "Wie nennt sich das folgende boolsche Gesetz?",
+    "description": "(x + y ) + z = x + (y +z)\n(x ⋅ y ) ⋅ z = x ⋅ (y ⋅ z)",
     "type": "radio",
     "answers": [
       {
@@ -308,7 +311,8 @@
     ]
   },
   {
-    "name": "Wie nennt sich das folgende boolsche Gesetz?\n\nx ⋅ y + x ⋅ z = x ⋅ (y + z)\n(x + y) ⋅ (x + z) = x + y ⋅ z",
+    "name": "Wie nennt sich das folgende boolsche Gesetz?",
+    "description": "x ⋅ y + x ⋅ z = x ⋅ (y + z)\n(x + y) ⋅ (x + z) = x + y ⋅ z",
     "type": "radio",
     "answers": [
       {
@@ -330,7 +334,7 @@
     ]
   },
   {
-    "name": "Welche Basis(Radix) hat das Hexalsystem",
+    "name": "Welche Basis(Radix) hat das Hexalsystem?",
     "type": "radio",
     "answers": [
       {
@@ -396,24 +400,24 @@
     ]
   },
   {
-    "name": "Wie wird eine (Dezimal-) Kommazahl als Festkommazahl dargestellt/ermittelt?",
+    "name": "Wie wird eine (Dezimal-) Kommazahl x als Festkommazahl dargestellt/ermittelt?",
     "type": "dropList",
     "orientation": "vertical",
     "answers": [
       {
-        "text": "π ⋅ 2ª, wenn a = Nachkommastellen",
+        "text": "x ⋅ 2ª, wenn a = Anzahl Nachkommastellen",
         "value": true
       },
       {
-        "text": "round(Zahl) (runden einer Zahl zur nächsten ganzen Zahl)",
+        "text": "round(x) (runden einer Zahl zur nächsten ganzen Zahl)",
         "value": true
       },
       {
-        "text": "Konvertieren ins Binärsystem",
+        "text": "konvertiere gerundetes x ins Binärsystem",
         "value": true
       },
       {
-        "text": "Verschiebe Zahl um a Bit nach rechts.(((Komma nach links)))",
+        "text": "Verschiebe Zahl um a Bit nach rechts. (Komma wird nach links verschoben)",
         "value": true
       }
     ]
@@ -511,7 +515,8 @@
     ]
   },
   {
-    "name": "In welchen Größen darf man Primimplikanten ermitteln? (x^n bedeutet: x hoch n)",
+    "name": "In welchen Größen darf man Primimplikanten ermitteln?",
+    "description": "(x^n bedeutet: x hoch n)",
     "type": "checkbox",
     "answers": [
       {
@@ -567,7 +572,7 @@
         "value": false
       },
       {
-        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten.",
+        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten. (multi hot code)",
         "value": false
       },
       {
@@ -581,15 +586,15 @@
     "type": "radio",
     "answers": [
       {
-        "text": "Für mehrere(m) Eingänge mehrere Ausgänge schalten.",
+        "text": "Für mehrere Eingänge mehrere Ausgänge schalten.",
         "value": false
       },
       {
-        "text": "Für mehrere(m) Eingänge einen Ausgang schalten.",
+        "text": "Für mehrere Eingänge einen Ausgang schalten.",
         "value": true
       },
       {
-        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten.",
+        "text": "Für jede Eingangskombination einen oder mehr Ausgänge schalten. (multi hot code)",
         "value": false
       },
       {
