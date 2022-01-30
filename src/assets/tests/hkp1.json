@@ -1,0 +1,947 @@
+[
+  {
+    "name": "Was trifft auf Introspection zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Abruf dynamischer Klasseneigenschaften",
+        "value": true
+      },
+      {
+        "text": "Verwendung zur generischen dynamischen Erzeugung von Objekten",
+        "value": false
+      },
+      {
+        "text": "Zugriff auf Informationen zur Struktur des Programms",
+        "value": true
+      },
+      {
+        "text": "Vorgang, bei dem sich ein Programm zur Laufzeit dynamisch selbst anpasst",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Über welche Wege kann man Zugriff auf eine Klasse erhalten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Class<?> c = (new Foo()).getClass();",
+        "value": true
+      },
+      {
+        "text": "Class<?> c = Foo.class;",
+        "value": true
+      },
+      {
+        "text": "Class<?> c = Class.forName(\"Foo\");",
+        "value": true
+      },
+      {
+        "text": "Class<?> c = (Class) \"Foo\";",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Reflection zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Abruf dynamischer Klasseneigenschaften",
+        "value": false
+      },
+      {
+        "text": "Verwendung zur generischen dynamischen Erzeugung von Objekten",
+        "value": true
+      },
+      {
+        "text": "Zugriff auf Informationen zur Struktur des Programms",
+        "value": false
+      },
+      {
+        "text": "Vorgang, bei dem sich ein Programm zur Laufzeit dynamisch selbst anpasst",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf 'unchecked Exceptions' zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "werden zur Kompilierungszeit geprüft",
+        "value": false
+      },
+      {
+        "text": "werden zur Ausführungszeit geprüft",
+        "value": true
+      },
+      {
+        "text": "werden mit try-catch abgefangen oder mit throws deklariert",
+        "value": false
+      },
+      {
+        "text": "sind immer direkte Unterklassen von 'RuntimeException'",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Entwurfsmuster zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ein Entwurfsmuster beschreibt eine formale Lösung für ein Teilproblem eines Entwurfs.",
+        "value": true
+      },
+      {
+        "text": "Es geht bei Entwurfsmustern nicht um die konkrete Implementierung von Logik sondern explizit um den Entwurf objektorientierter Strukturen.",
+        "value": true
+      },
+      {
+        "text": "Entwurfsmuster sind ein Strukturierungsmittel, das hilft, nicht jedesmal das \"Rad neu zu erfinden\".",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Art von Entwurfsmuster ist ein Iterator?",
+    "description": "Zweck des Iterator:\n\nErmögliche den sequentiellen Zugriff auf die Elemente eines zusammengesetzten Objekts,\nohne seine zugrundeliegende Repräsentation offen zu legen.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": false
+      },
+      {
+        "text": "Strukturmuster",
+        "value": false
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Art von Entwurfsmuster ist das Singleton?",
+    "description": "Zweck des Singleton:\n\nSichere ab, dass eine Klasse genau ein Exemplar besitzt und stelle einen globalen Zugriffspunkt darauf bereit.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": true
+      },
+      {
+        "text": "Strukturmuster",
+        "value": false
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Art von Entwurfsmuster ist ein Decorator?",
+    "description": "Ein Decorator kann verwendet werden, um zusätzliche Zuständigkeiten entweder statisch oder dynamisch\nan ein Objekt anzuhängen.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": false
+      },
+      {
+        "text": "Strukturmuster",
+        "value": true
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Art von Entwurfsmuster ist eine Factory?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": true
+      },
+      {
+        "text": "Strukturmuster",
+        "value": false
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wozu kann eine Factory in Java verwendet werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Objekte mit Hilfe einer Methode statt direkt durch einen Konstruktoraufruf erzeugen",
+        "value": true
+      },
+      {
+        "text": "Abhängigkeitsumkehrung",
+        "value": true
+      },
+      {
+        "text": "Entkopplung der Objektverarbeitung von einer konkreten Implementierung",
+        "value": true
+      },
+      {
+        "text": "Herstellung von Joghurt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Arten von Einschränkungen gibt es im Bezug auf 'Design by Contract'?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Implantationen",
+        "value": false
+      },
+      {
+        "text": "Invarianten",
+        "value": true
+      },
+      {
+        "text": "Vorbedingung",
+        "value": true
+      },
+      {
+        "text": "Zwischenbedingung",
+        "value": false
+      },
+      {
+        "text": "Nachbedingung",
+        "value": true
+      },
+      {
+        "text": "Abschlussbedingung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Operationen werden zwischen Anfragen (Queries) und Anweisungen (Commands) unterschieden. Vervollständige den Satz: 'Anfragen liefern ...'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "keine Werte zurück, sondern verändern nur den Zustand des Objektes.",
+        "value": false
+      },
+      {
+        "text": "Werte zurück, aber verändern den Zustand (die Instanzvariablen) des Objektes nicht.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Operationen werden zwischen Anfragen (Queries) und Anweisungen (Commands) unterschieden. Vervollständige den Satz: 'Anweisungen liefern ...'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "keine Werte zurück, sondern verändern nur den Zustand des Objektes.",
+        "value": true
+      },
+      {
+        "text": "Werte zurück, aber verändern den Zustand (die Instanzvariablen) des Objektes nicht.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Markiere die Vorteile von Verträgen im Bezug auf 'Design by Contract'.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Entwurf wird systematischer und häufig weniger komplex",
+        "value": true
+      },
+      {
+        "text": "Überprüfung zur Laufzeit erhöht die Zuverlässigkeit",
+        "value": true
+      },
+      {
+        "text": "Unterscheidung zwischen deklarativer Beschreibung und imperativer Beschreibung vertieft Verständnis",
+        "value": true
+      },
+      {
+        "text": "Kontrolle über die korrekte Redefinition von Operationen impliziert bessere Wiederverwendbarkeit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Imperative vs. deklarative Programmierung. Welche Aussagen sind korrekt?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Imperative Programmierung liefert einen Algorithmus zur Lösung des Problems mit.",
+        "value": true
+      },
+      {
+        "text": "Imperative Programmierung beschreibt ohne Angabe der Vorgehensweise das Ergebnis.",
+        "value": false
+      },
+      {
+        "text": "Deklarative Programmierung liefert einen Algorithmus zur Lösung des Problems mit.",
+        "value": false
+      },
+      {
+        "text": "Deklarative Programmierung beschreibt ohne Angabe der Vorgehensweise das Ergebnis.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Invarianten zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Stellen Konsistenz der Werte von Attributen sicher.",
+        "value": true
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens abgeschwächt, aber nie verstärkt werden.",
+        "value": false
+      },
+      {
+        "text": "Muss vom Aufgerufenen garantiert werden, wenn der Aufrufer die Vorbedingung eingehalten hat.",
+        "value": false
+      },
+      {
+        "text": "Können (unter gewissen Voraussetzungen) das Ergebnis einer Operation garantieren.",
+        "value": false
+      },
+      {
+        "text": "Müssen immer gelten, bei jeder Instanz einer Klasse, zu jedem Zeitpunkt.",
+        "value": true
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens verstärkt, aber nie abgeschwächt werden.",
+        "value": false
+      },
+      {
+        "text": "Beschreibt den veränderten Systemzustand oder Rückgabewerte.",
+        "value": false
+      },
+      {
+        "text": "Sinnvolle Implementierung nur möglich bei konsequenter Verwendung von getter/setter Methoden.",
+        "value": true
+      },
+      {
+        "text": "Stellen sicher, dass Operationen korrekt funktionieren.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Aussagen sind Beispiele für Invarianten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Einschränkung des Wertebereichs einer Instanzvariablen.",
+        "value": true
+      },
+      {
+        "text": "Einschränkung des erlaubten Wertebereichs von Instanzvariablen bei Methodenaufruf.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung erlaubter Parameterwerte bei Methodenaufruf.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung des Rückgabewertes.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung der Reihenfolge von Methodenaufrufen.",
+        "value": false
+      },
+      {
+        "text": "Abhängigkeit zwischen den Werten verschiedener Instanzvariablen.",
+        "value": true
+      },
+      {
+        "text": "Anpassung des Wertes einer Instanzvariablen.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Vorbedingungen zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Stellen Konsistenz der Werte von Attributen sicher.",
+        "value": false
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens abgeschwächt, aber nie verstärkt werden.",
+        "value": true
+      },
+      {
+        "text": "Muss vom Aufgerufenen garantiert werden, wenn der Aufrufer die Vorbedingung eingehalten hat.",
+        "value": false
+      },
+      {
+        "text": "Können (unter gewissen Voraussetzungen) das Ergebnis einer Operation garantieren.",
+        "value": false
+      },
+      {
+        "text": "Müssen immer gelten, bei jeder Instanz einer Klasse, zu jedem Zeitpunkt.",
+        "value": false
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens verstärkt, aber nie abgeschwächt werden.",
+        "value": false
+      },
+      {
+        "text": "Beschreibt den veränderten Systemzustand oder Rückgabewerte.",
+        "value": false
+      },
+      {
+        "text": "Sinnvolle Implementierung nur möglich bei konsequenter Verwendung von getter/setter Methoden.",
+        "value": false
+      },
+      {
+        "text": "Stellen sicher, dass Operationen korrekt funktionieren.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche der Aussagen sind Beispiele für Vorbedingungen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Einschränkung des Wertebereichs einer Instanzvariablen.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung des erlaubten Wertebereichs von Instanzvariablen bei Methodenaufruf.",
+        "value": true
+      },
+      {
+        "text": "Einschränkung erlaubter Parameterwerte bei Methodenaufruf.",
+        "value": true
+      },
+      {
+        "text": "Einschränkung des Rückgabewertes.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung der Reihenfolge von Methodenaufrufen.",
+        "value": true
+      },
+      {
+        "text": "Abhängigkeit zwischen den Werten verschiedener Instanzvariablen.",
+        "value": false
+      },
+      {
+        "text": "Anpassung des Wertes einer Instanzvariablen.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Nachbedingungen zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Stellen Konsistenz der Werte von Attributen sicher.",
+        "value": false
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens abgeschwächt, aber nie verstärkt werden.",
+        "value": false
+      },
+      {
+        "text": "Muss vom Aufgerufenen garantiert werden, wenn der Aufrufer die Vorbedingung eingehalten hat.",
+        "value": true
+      },
+      {
+        "text": "Können (unter gewissen Voraussetzungen) das Ergebnis einer Operation garantieren.",
+        "value": true
+      },
+      {
+        "text": "Müssen immer gelten, bei jeder Instanz einer Klasse, zu jedem Zeitpunkt.",
+        "value": false
+      },
+      {
+        "text": "Können im Rahmen der Redefinition höchstens verstärkt, aber nie abgeschwächt werden.",
+        "value": true
+      },
+      {
+        "text": "Beschreibt den veränderten Systemzustand oder Rückgabewerte.",
+        "value": true
+      },
+      {
+        "text": "Sinnvolle Implementierung nur möglich bei konsequenter Verwendung von getter/setter Methoden.",
+        "value": false
+      },
+      {
+        "text": "Stellen sicher, dass Operationen korrekt funktionieren.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Aussagen sind Beispiele für Nachbedingungen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Einschränkung des Wertebereichs einer Instanzvariablen.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung des erlaubten Wertebereichs von Instanzvariablen bei Methodenaufruf.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung erlaubter Parameterwerte bei Methodenaufruf.",
+        "value": false
+      },
+      {
+        "text": "Einschränkung des Rückgabewertes.",
+        "value": true
+      },
+      {
+        "text": "Einschränkung der Reihenfolge von Methodenaufrufen.",
+        "value": false
+      },
+      {
+        "text": "Abhängigkeit zwischen den Werten verschiedener Instanzvariablen.",
+        "value": false
+      },
+      {
+        "text": "Anpassung des Wertes einer Instanzvariablen.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf ein Kalkül im Allgemeinen zu?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Formale Einhaltung von Regeln, ohne unbedingt den Sinn zu hinterfragen.",
+        "value": true
+      },
+      {
+        "text": "Einhaltung von Regeln mit gleichzeitiger Sicherstellung einer sinnvollen Implementierung.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Ziel des Hoare Kalkül?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Beweis der Funktionsfähigkeit von Programmen",
+        "value": false
+      },
+      {
+        "text": "Beweis der Korrektheit von Programmen",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Markiere korrekte Prinzipien logischer Kalküle.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Konsistenzprinzip: Widersprüche dürfen nicht auftauchen.",
+        "value": true
+      },
+      {
+        "text": "Monotonieprinzip: Hinzunahme von Annahmen darf die Gültigkeit eines Beweises nicht verändern.",
+        "value": true
+      },
+      {
+        "text": "Konsistenzprinzip: Hinzunahme von Annahmen darf die Gültigkeit eines Beweises nicht verändern.",
+        "value": false
+      },
+      {
+        "text": "Monotonieprinzip: Widersprüche dürfen nicht auftauchen.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Kalkül ist vollständig, wenn ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "sich jede gültige Folgerung auch mit dem Kalkül beweisen lässt.",
+        "value": true
+      },
+      {
+        "text": "sich ausschließlich gültige logische Folgerungen mit dem Kalkül beweisen lassen.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Kalkül ist korrekt, wenn ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "sich jede gültige Folgerung auch mit dem Kalkül beweisen lässt.",
+        "value": false
+      },
+      {
+        "text": "sich ausschließlich gültige logische Folgerungen mit dem Kalkül beweisen lassen.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf konstruktive Logik zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Jede Aussage muss entweder wahr oder falsch sein, ein anderer Zustand ist nicht möglich.",
+        "value": false
+      },
+      {
+        "text": "Aus einem Widerspruch kann man beliebiges ableiten.",
+        "value": true
+      },
+      {
+        "text": "Gegenteil einer Aussage annehmen, darüber auf Widerspruch schließen und dann gilt die nicht negierte (initiale) Aussage.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf klassische Logik zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Jede Aussage muss entweder wahr oder falsch sein, ein anderer Zustand ist nicht möglich.",
+        "value": true
+      },
+      {
+        "text": "Aus einem Widerspruch kann man beliebiges ableiten.",
+        "value": false
+      },
+      {
+        "text": "Gegenteil einer Aussage annehmen, darüber auf Widerspruch schließen und dann gilt die nicht negierte (initiale) Aussage.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Die Floyd-Hoare Logik erlaubt es, Zusicherungen der Form ... syntaktisch herzustellen.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "|- {P}s{Q}",
+        "value": true
+      },
+      {
+        "text": "|- {Q}s{P}",
+        "value": false
+      },
+      {
+        "text": "|- {S}p{Q}",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welches Ziel hat der ServiceLoader in Java?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Objektorientierte Programmierung sicherstellen",
+        "value": false
+      },
+      {
+        "text": "Erfüllung des Hoare Kalküls",
+        "value": false
+      },
+      {
+        "text": "Dependency Injection",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit Annotationen in Java ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "können Informationen / Metadaten in den Sourcecode eingefügt werden",
+        "value": true
+      },
+      {
+        "text": "können Compilerwarnungen ausgeschaltet werden",
+        "value": true
+      },
+      {
+        "text": "kann zur Compilezeit eigener Code ausgeführt werden",
+        "value": true
+      },
+      {
+        "text": "können Annotationen annotiert werden",
+        "value": true
+      },
+      {
+        "text": "kann Quellcode generiert werden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sollen Annotationen in Java nur zur Compilezeit verfügbar sein, muss folgende RetentionPolicy verwendet werden:",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "RetentionPolicy.SOURCE",
+        "value": true
+      },
+      {
+        "text": "RetentionPolicy.CLASS",
+        "value": false
+      },
+      {
+        "text": "RetentionPolicy.RUNTIME",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei welchen dieser Ausdrücke handelt es sich um primitive Ausdrücke in ocaml?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "if 2 > 3 then 4 else 5",
+        "value": false
+      },
+      {
+        "text": "1.0 /. 2.0",
+        "value": true
+      },
+      {
+        "text": "[1] @ [2]",
+        "value": false
+      },
+      {
+        "text": "let mychar = 'x' ;;",
+        "value": true
+      },
+      {
+        "text": "let foo = int * bool ;;",
+        "value": false
+      },
+      {
+        "text": "1 :: 2 :: []",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei welchen dieser Ausdrücke handelt es sich um konditionale Ausdrücke in ocaml?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "if 2 > 3 then 4 else 5",
+        "value": true
+      },
+      {
+        "text": "1.0 /. 2.0",
+        "value": false
+      },
+      {
+        "text": "[1] @ [2]",
+        "value": false
+      },
+      {
+        "text": "let mychar = 'x' ;;",
+        "value": false
+      },
+      {
+        "text": "let foo = int * bool ;;",
+        "value": false
+      },
+      {
+        "text": "1 :: 2 :: []",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei welchen dieser Ausdrücke handelt es sich um strukturierte Ausdrücke in ocaml?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "if 2 > 3 then 4 else 5",
+        "value": false
+      },
+      {
+        "text": "1.0 /. 2.0",
+        "value": false
+      },
+      {
+        "text": "[1] @ [2]",
+        "value": true
+      },
+      {
+        "text": "let mychar = 'x' ;;",
+        "value": false
+      },
+      {
+        "text": "let foo = int * bool ;;",
+        "value": true
+      },
+      {
+        "text": "1 :: 2 :: []",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Funktionsausdrücke sind alleinstehend (in einem leeren Environment) valide in ocaml?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "let v = fun x -> x",
+        "value": true
+      },
+      {
+        "text": "let v = fun x -> z",
+        "value": false
+      },
+      {
+        "text": "let v = fun x -> x + 1 + 4",
+        "value": true
+      },
+      {
+        "text": "let v = fun x -> x + 1 + y",
+        "value": false
+      },
+      {
+        "text": "let v = (fun x -> x + 1) v ;;",
+        "value": false
+      },
+      {
+        "text": "let rec b = (fun x -> x + 1) b ;;",
+        "value": false
+      },
+      {
+        "text": "let rec f mylen l = match l with [] -> 0 | h :: t -> 1 + mylen t ;;",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Bei welcher Funktion handelt es sich um eine anonyme Funktion in ocaml?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "let v = fun x -> 1",
+        "value": false
+      },
+      {
+        "text": "fun x -> 1",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Zu welchem Ergebnis wird dieser Funktionsaufruf ausgewertet?",
+    "description": "(fun x -> x + 1) 4 * 5 + 1 ;;",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "22",
+        "value": false
+      },
+      {
+        "text": "24",
+        "value": false
+      },
+      {
+        "text": "25",
+        "value": false
+      },
+      {
+        "text": "26",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Zu welchem Ergebnis wird dieser Funktionsaufruf ausgewertet?",
+    "description": "let foo baz = let rec bert r l = \n              match l with\n                  [] -> []\n                | h :: [] -> r\n                | h :: t -> bert t (r @ [h])\n  in bert [] baz\n;;\nfoo [6;8;0;1;2] ;;",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "[6; 8; 0; 1; 2]",
+        "value": false
+      },
+      {
+        "text": "[6; 8; 0; 1]",
+        "value": false
+      },
+      {
+        "text": "[8; 0; 1; 2]",
+        "value": true
+      },
+      {
+        "text": "[0; 1; 2; 6; 8]",
+        "value": false
+      },
+      {
+        "text": "[0; 1; 2; 6]",
+        "value": false
+      },
+      {
+        "text": "[1; 2; 6; 8]",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf parametrischen Polymorphismus zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Funktion kann mit verschiedenen Elementen polymorphen Types aufgerufen werden.",
+        "value": true
+      },
+      {
+        "text": "'listmap a b' gleich implementiert für beliebige a und b, die kompatibel sind.",
+        "value": true
+      },
+      {
+        "text": "Grundlage der generischen Programmierung.",
+        "value": true
+      },
+      {
+        "text": "Grundlage der objektorientierten Programmierung.",
+        "value": false
+      },
+      {
+        "text": "Abgrenzung vom adhoc Polymorphismus mit unterschiedlicher Implementierung für unterschiedliche Typen.",
+        "value": true
+      }
+    ]
+  }
+]

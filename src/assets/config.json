@@ -36,6 +36,12 @@
       "questions": "assets/tests/digitech1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "digitech1"
+    },
+    {
+      "title": "Höhere Konzepte der Programmierung (WiSe 21/22)",
+      "questions": "assets/tests/hkp1.json",
+      "numberOfRandomQuestions": 5,
+      "uniqueIdentifier": "hkp1"
     }
   ]
 }
