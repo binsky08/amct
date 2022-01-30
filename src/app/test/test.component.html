@@ -20,9 +20,9 @@
   <mat-card *ngIf="startTest">
     <div *ngFor="let question of questions; let i = index">
       <mat-card-content>
-        <h3>
-          {{question.name}}
-        </h3>
+        <h3>{{question.name}}</h3>
+
+        <pre *ngIf="question.description">{{question.description}}</pre>
 
         <ul *ngIf="question.type == 'checkbox'">
           <li *ngFor="let answer of question.answers; let j = index" class="example-margin">
