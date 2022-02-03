@@ -106,6 +106,60 @@
     ]
   },
   {
+    "name": "Zu welcher Art von Entwurfsmuster gehört die Eigenschaft 'die Bindung zwischen 2 oder mehr Klassen zu reduzieren'?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": false
+      },
+      {
+        "text": "Strukturmuster",
+        "value": true
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Zu welcher Art von Entwurfsmuster gehört die Eigenschaft 'Softwaresysteme unabhängig davon zu machen, wie Objekte entworfen, erstellt und repräsentiert werden'?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": true
+      },
+      {
+        "text": "Strukturmuster",
+        "value": false
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Zu welcher Art von Entwurfsmuster gehört die Eigenschaft 'die softwaregesteuerte Wahl zwischen einem Algorithmus und der Zuweisung von Verantwortlichkeiten von Objekten zu erlauben'?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Erzeugungsmuster",
+        "value": false
+      },
+      {
+        "text": "Strukturmuster",
+        "value": false
+      },
+      {
+        "text": "Verhaltensmuster",
+        "value": true
+      }
+    ]
+  },
+  {
     "name": "Welche Art von Entwurfsmuster ist ein Iterator?",
     "description": "Zweck des Iterator:\n\nErmögliche den sequentiellen Zugriff auf die Elemente eines zusammengesetzten Objekts,\nohne seine zugrundeliegende Repräsentation offen zu legen.",
     "type": "radio",
@@ -301,6 +355,36 @@
       {
         "text": "Deklarative Programmierung beschreibt ohne Angabe der Vorgehensweise das Ergebnis.",
         "value": true
+      }
+    ]
+  },
+  {
+    "name": "Auf welche Weise ist das Problem Zahlen in einem Array zu verdoppeln hier gelöst?",
+    "description": "var zahlen = [1,2,3,4,5]\n\nvar verdoppelt = zahlen.map(function(n) {\n    return n * 2\n})\nconsole.log(verdoppelt)",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "mit einem imperativen Ansatz",
+        "value": false
+      },
+      {
+        "text": "mit einem deklarativen Ansatz",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Auf welche Weise ist das Problem Zahlen in einem Array zu verdoppeln hier gelöst?",
+    "description": "var zahlen = [1,2,3,4,5]\nvar verdoppelt = []\n\nfor(var i = 0; i < zahlen.length; i++) {\n    var neueZahl = zahlen[i] * 2\n    verdoppelt.push(neueZahl)\n}\nconsole.log(verdoppelt)",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "mit einem imperativen Ansatz",
+        "value": true
+      },
+      {
+        "text": "mit einem deklarativen Ansatz",
+        "value": false
       }
     ]
   },
@@ -533,6 +617,28 @@
     ]
   },
   {
+    "name": "Schleifeninvarianten sind Eigenschaften einer Schleife, die ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "bei jedem Schleifendurchlauf erhalten bleiben.",
+        "value": true
+      },
+      {
+        "text": "nur vor Beginn des ersten Schleifendurchlaufs gelten.",
+        "value": false
+      },
+      {
+        "text": "nur beim Ersten und beim Letzten Schleifendurchlauf gelten.",
+        "value": false
+      },
+      {
+        "text": "sich bei jeder Iteration ändern.",
+        "value": false
+      }
+    ]
+  },
+  {
     "name": "Was trifft auf ein Kalkül im Allgemeinen zu?",
     "type": "radio",
     "answers": [
@@ -557,6 +663,24 @@
       {
         "text": "Beweis der Korrektheit von Programmen",
         "value": true
+      }
+    ]
+  },
+  {
+    "name": "Die Floyd-Hoare Logik erlaubt es, Zusicherungen der Form ... syntaktisch herzustellen.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "|- {P}s{Q}",
+        "value": true
+      },
+      {
+        "text": "|- {Q}s{P}",
+        "value": false
+      },
+      {
+        "text": "|- {S}p{Q}",
+        "value": false
       }
     ]
   },
@@ -647,19 +771,107 @@
     ]
   },
   {
-    "name": "Die Floyd-Hoare Logik erlaubt es, Zusicherungen der Form ... syntaktisch herzustellen.",
+    "name": "{P}s{Q} ist gültig, wenn s partiell korrekt ist bzgl. Vorbedingung P und Nachbedingung Q, d.h. wenn folgendes gilt:",
     "type": "radio",
     "answers": [
       {
-        "text": "|- {P}s{Q}",
+        "text": "wenn P im Anfangszustand von s gilt und wenn s terminiert, dann gilt Q nach Ausführung von s.",
         "value": true
       },
       {
-        "text": "|- {Q}s{P}",
+        "text": "wenn P im Anfangszustand von s gilt, dann terminiert s und Q gilt nach Ausführung von s.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "{P}s{Q} ist gültig, wenn s total korrekt ist bzgl. Vorbedingung P und Nachbedingung Q, d.h. wenn folgendes gilt:",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "wenn P im Anfangszustand von s gilt und wenn s terminiert, dann gilt Q nach Ausführung von s.",
         "value": false
       },
       {
-        "text": "|- {S}p{Q}",
+        "text": "wenn P im Anfangszustand von s gilt, dann terminiert s und Q gilt nach Ausführung von s.",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche der Optionen sind Beispiele für partielle Korrektheit (aber nicht für totale Korrektheit)?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "{true} if(y>0) x=y; else x=-y; {x == |y|}",
+        "value": false
+      },
+      {
+        "text": "{x>=0} if(y>0) x=y; else x=-y; {x>=0}",
+        "value": false
+      },
+      {
+        "text": "{x>1} x=x+1; y=x; {y>2 & x>2}",
+        "value": false
+      },
+      {
+        "text": "{true} while(x!=0) x=x-1; {x==0}",
+        "value": true
+      },
+      {
+        "text": "{x>=0} while(x!=0) x=x-1; {x==0}",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Optionen sind Beispiele für totale Korrektheit?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "{true} if(y>0) x=y; else x=-y; {x == |y|}",
+        "value": true
+      },
+      {
+        "text": "{x>=0} if(y>0) x=y; else x=-y; {x>=0}",
+        "value": true
+      },
+      {
+        "text": "{x>1} x=x+1; y=x; {y>2 & x>2}",
+        "value": true
+      },
+      {
+        "text": "{true} while(x!=0) x=x-1; {x==0}",
+        "value": false
+      },
+      {
+        "text": "{x>=0} while(x!=0) x=x-1; {x==0}",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Vor- und Nachbedingung können in Java durch ... realisiert werden.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Factories",
+        "value": false
+      },
+      {
+        "text": "den ServiceLoader",
+        "value": false
+      },
+      {
+        "text": "vorgegebene Annotations",
+        "value": false
+      },
+      {
+        "text": "Assertions",
+        "value": true
+      },
+      {
+        "text": "die Klasse AnnotationProcessor",
         "value": false
       }
     ]
@@ -710,7 +922,7 @@
   },
   {
     "name": "Sollen Annotationen in Java nur zur Compilezeit verfügbar sein, muss folgende RetentionPolicy verwendet werden:",
-    "type": "checkbox",
+    "type": "radio",
     "answers": [
       {
         "text": "RetentionPolicy.SOURCE",
@@ -935,8 +1147,8 @@
         "value": true
       },
       {
-        "text": "Grundlage der objektorientierten Programmierung.",
-        "value": false
+        "text": "Ist sehr stark in objektorientierter Programmierung verankert.",
+        "value": true
       },
       {
         "text": "Abgrenzung vom adhoc Polymorphismus mit unterschiedlicher Implementierung für unterschiedliche Typen.",
