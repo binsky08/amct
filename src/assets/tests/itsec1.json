@@ -1,0 +1,1334 @@
+[
+  {
+    "name": "Viele Angriffe (von Kriminellen) lassen sich in drei Phasen unterteilen. Wähle die richtigen Phasen und bringe sie auf der linken Seite in die richtige Reihenfolge.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": true,
+    "answers": [
+      {
+        "text": "Eindringen",
+        "value": true
+      },
+      {
+        "text": "Kompromittieren",
+        "value": true
+      },
+      {
+        "text": "Monetarisieren",
+        "value": true
+      },
+      {
+        "text": "Erpresstes Geld zu 100% an gemeinnützige Stiftungen spenden",
+        "value": false
+      },
+      {
+        "text": "Kuchen essen",
+        "value": false
+      },
+      {
+        "text": "Kostenlosen Fix der Systemschwachstelle bereitstellen",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welches sind typische Techniken zum Eindringen in Systeme?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Phishing",
+        "value": true
+      },
+      {
+        "text": "Spear Phishing",
+        "value": true
+      },
+      {
+        "text": "Passwort erraten",
+        "value": true
+      },
+      {
+        "text": "Physischer Zugang",
+        "value": true
+      },
+      {
+        "text": "Bug Bounty",
+        "value": false
+      },
+      {
+        "text": "Exploits",
+        "value": true
+      },
+      {
+        "text": "Social engineering",
+        "value": true
+      },
+      {
+        "text": "Responsible Disclosure",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Einträge sind typische Sicherheitsziele?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Vertraulichkeit",
+        "value": true
+      },
+      {
+        "text": "Verschlossenheit",
+        "value": false
+      },
+      {
+        "text": "Integrität",
+        "value": true
+      },
+      {
+        "text": "Authentifikation",
+        "value": false
+      },
+      {
+        "text": "Authentizität",
+        "value": true
+      },
+      {
+        "text": "Verfügbarkeit",
+        "value": true
+      },
+      {
+        "text": "Autorisierung",
+        "value": true
+      },
+      {
+        "text": "Motorisierung",
+        "value": false
+      },
+      {
+        "text": "Verbundenheit",
+        "value": false
+      },
+      {
+        "text": "Verbindlichkeit",
+        "value": true
+      },
+      {
+        "text": "Blockierung von Katzenbildern in E-Mails",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wähle das zur folgenden Definition passendste Verschlüsselungsverfahren.",
+    "description": "Ersetze jeden Buchstaben durch einen im Alphabet.\nSchlüssel ist die Permutation.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "AES",
+        "value": false
+      },
+      {
+        "text": "RSA",
+        "value": false
+      },
+      {
+        "text": "Monoalphabetische Substitution",
+        "value": true
+      },
+      {
+        "text": "Polyalphabetische Substitution",
+        "value": false
+      },
+      {
+        "text": "One-Time Pad",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wähle das zur folgenden Definition passendste Verschlüsselungsverfahren.",
+    "description": "Wie Vigneré Chiffre, nur, dass der Schlüssel die gleiche Länge wie der Plaintext hat,\nalso nicht expandiert werden muss.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "AES",
+        "value": false
+      },
+      {
+        "text": "RSA",
+        "value": false
+      },
+      {
+        "text": "Monoalphabetische Substitution",
+        "value": false
+      },
+      {
+        "text": "Polyalphabetische Substitution",
+        "value": false
+      },
+      {
+        "text": "One-Time Pad",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wähle das zur folgenden Definition passendste Verschlüsselungsverfahren.",
+    "description": "Kryptographisches Verfahren, welches sowohl zum Verschlüsseln,\nals auch zum digitalen Signieren verwendet werden kann.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "AES",
+        "value": false
+      },
+      {
+        "text": "RSA",
+        "value": true
+      },
+      {
+        "text": "Monoalphabetische Substitution",
+        "value": false
+      },
+      {
+        "text": "Polyalphabetische Substitution",
+        "value": false
+      },
+      {
+        "text": "One-Time Pad",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Vervollständige den Satz: 'Die meisten Krypto Verfahren gelten als ungebrochen, solange ...'",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "mindestens 95% aller Implementierungen als sicher gelten.",
+        "value": false
+      },
+      {
+        "text": "Brute-Force der effizienteste Angriff ist.",
+        "value": true
+      },
+      {
+        "text": "sie nicht auf Quantencomputern berechnet werden können.",
+        "value": false
+      },
+      {
+        "text": "kein mathematisches Vorgehen existiert, welches diese Verfahren knacken könnte.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf AES zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "basiert auf dem Rjindael Algorithmus",
+        "value": true
+      },
+      {
+        "text": "basiert auf RSA",
+        "value": false
+      },
+      {
+        "text": "ist eine Blockchiffre, die auf 128-Bit Blöcken arbeitet",
+        "value": true
+      },
+      {
+        "text": "ist eine Blockchiffre, die auf 128-Bit, 192-Bit und 256-Bit Blöcken arbeiten kann",
+        "value": false
+      },
+      {
+        "text": "ist eine Stromchiffre, die eingegebene Zeichen einzeln verarbeitet",
+        "value": false
+      },
+      {
+        "text": "Es existiert kein mathematisches Vorgehen, mit welchem diese Verschlüselung geknackt werden könnte.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit wie vielen sogenannten Runden arbeitet AES-256?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "8",
+        "value": false
+      },
+      {
+        "text": "10",
+        "value": false
+      },
+      {
+        "text": "12",
+        "value": false
+      },
+      {
+        "text": "14",
+        "value": true
+      },
+      {
+        "text": "16",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Ordne die AES Operationen in der richtigen Reihenfolge, davon ausgehend, dass mit 'AddRoundKey' begonnen wird.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "AddRoundKey",
+        "value": true
+      },
+      {
+        "text": "SubBytes",
+        "value": true
+      },
+      {
+        "text": "ShiftRows",
+        "value": true
+      },
+      {
+        "text": "MixColumns",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf AES-CBC zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "nicht für parallele Verarbeitung geeignet",
+        "value": true
+      },
+      {
+        "text": "Verschlüsselung mit Fehlerresistenz",
+        "value": false
+      },
+      {
+        "text": "Macht aus Blockchiffre eine Stromchiffre",
+        "value": false
+      },
+      {
+        "text": "Macht aus Stromchiffre eine Blockchiffre",
+        "value": false
+      },
+      {
+        "text": "Besonders gesichert gegen Angriffe auf die Implementierung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf AES-CTR zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "nicht für parallele Verarbeitung geeignet",
+        "value": false
+      },
+      {
+        "text": "Verschlüsselung mit Fehlerresistenz",
+        "value": true
+      },
+      {
+        "text": "Macht aus Blockchiffre eine Stromchiffre",
+        "value": true
+      },
+      {
+        "text": "Macht aus Stromchiffre eine Blockchiffre",
+        "value": false
+      },
+      {
+        "text": "Besonders gesichert gegen Angriffe auf die Implementierung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "In welche Verfahren zerlegt sich hybride Verschlüsselung?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Asymmetrische Verfahren um einen symmetrischen Schlüssel zu übertragen",
+        "value": true
+      },
+      {
+        "text": "Asymmetrische Verfahren um die Daten zu übertragen",
+        "value": false
+      },
+      {
+        "text": "Symmetrische Verfahren um einen symmetrischen Schlüssel zu übertragen",
+        "value": false
+      },
+      {
+        "text": "Symmetrische Verfahren um die Daten zu übertragen",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Bei welchen dieser Verfahren handelt es sich um asymmetrische Verfahren zur Schlüsselvereinbarung?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Diffie-Hellman Verfahren",
+        "value": true
+      },
+      {
+        "text": "Julius Caesar Verfahren",
+        "value": false
+      },
+      {
+        "text": "Einstein Verfahren",
+        "value": false
+      },
+      {
+        "text": "Rjindael Verfahren",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Digitale Signaturen bieten ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Vertraulichkeit",
+        "value": false
+      },
+      {
+        "text": "Verschlossenheit",
+        "value": false
+      },
+      {
+        "text": "Integrität",
+        "value": true
+      },
+      {
+        "text": "Authentifikation",
+        "value": false
+      },
+      {
+        "text": "Authentizität",
+        "value": true
+      },
+      {
+        "text": "Verfügbarkeit",
+        "value": false
+      },
+      {
+        "text": "Autorisierung",
+        "value": false
+      },
+      {
+        "text": "Motorisierung",
+        "value": false
+      },
+      {
+        "text": "Verbundenheit",
+        "value": false
+      },
+      {
+        "text": "Verbindlichkeit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Hash Funktionen ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "sollten die Eigwegeigenschaft erfüllen.",
+        "value": true
+      },
+      {
+        "text": "sollten die Zweiwegeigenschaft erfüllen.",
+        "value": false
+      },
+      {
+        "text": "bilden beliebig lange Nachrichten auf einen Hashwert fixer Länge ab.",
+        "value": true
+      },
+      {
+        "text": "versetzen den Anwender in einen anderen Geisteszustand.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf schwache Kollisionsresistenz zu?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Es darf nicht möglich sein zu m ein anderes m′ zu finden mit m ≠ m′ und H(m) = H(m′).",
+        "value": true
+      },
+      {
+        "text": "Es darf nicht möglich sein zwei beliebige m und m′ zu finden mit m ≠ m′ und H(m) = H(m′).",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche der Hash Funktionen gelten derzeit nicht als praktisch gebrochen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "MD5",
+        "value": false
+      },
+      {
+        "text": "RIPEMD-128",
+        "value": false
+      },
+      {
+        "text": "SHA1",
+        "value": false
+      },
+      {
+        "text": "SHA2",
+        "value": true
+      },
+      {
+        "text": "SHA3",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Operation kann pro Sekunde wesentlich öfter ausgeführt werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "RSA Signatur generieren",
+        "value": true
+      },
+      {
+        "text": "RSA Schlüsselpaar generieren",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welches sind (theoretisch) zuverlässige TRNG Rauschquellen?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Elektronenbewegung",
+        "value": true
+      },
+      {
+        "text": "atmosphärisches Rauschen",
+        "value": true
+      },
+      {
+        "text": "atomarer Zerfall",
+        "value": true
+      },
+      {
+        "text": "Spannungsschwankungen an einer Z-Diode",
+        "value": true
+      },
+      {
+        "text": "Eingaben (Maus/Tastatur) von Nutzern",
+        "value": true
+      },
+      {
+        "text": "Timestamp des Systems + aktuelle Systemlaufzeit in Sekunden",
+        "value": false
+      },
+      {
+        "text": "/dev/random",
+        "value": true
+      },
+      {
+        "text": "/dev/urandom",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bei der Verwendung von Quantencomputern werden mit Hilfe von Shor's Algorithmus welche Verfahren unsicher?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Diffie-Hellman",
+        "value": true
+      },
+      {
+        "text": "Einstein",
+        "value": false
+      },
+      {
+        "text": "Merkle",
+        "value": false
+      },
+      {
+        "text": "RSA",
+        "value": true
+      },
+      {
+        "text": "DSA",
+        "value": true
+      },
+      {
+        "text": "SHA-128",
+        "value": false
+      },
+      {
+        "text": "SHA-512",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Sicherheitsziele ermöglichen Message Authentication Codes?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Vertraulichkeit",
+        "value": false
+      },
+      {
+        "text": "Verschlossenheit",
+        "value": false
+      },
+      {
+        "text": "Integrität",
+        "value": true
+      },
+      {
+        "text": "Authentifikation",
+        "value": false
+      },
+      {
+        "text": "Authentizität",
+        "value": true
+      },
+      {
+        "text": "Verfügbarkeit",
+        "value": false
+      },
+      {
+        "text": "Autorisierung",
+        "value": false
+      },
+      {
+        "text": "Motorisierung",
+        "value": false
+      },
+      {
+        "text": "Verbundenheit",
+        "value": false
+      },
+      {
+        "text": "Verbindlichkeit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Sicherheitsziele ermöglicht asymmetrische Verschlüsselung?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Vertraulichkeit",
+        "value": true
+      },
+      {
+        "text": "Verschlossenheit",
+        "value": false
+      },
+      {
+        "text": "Integrität",
+        "value": false
+      },
+      {
+        "text": "Authentifikation",
+        "value": false
+      },
+      {
+        "text": "Authentizität",
+        "value": false
+      },
+      {
+        "text": "Verfügbarkeit",
+        "value": false
+      },
+      {
+        "text": "Autorisierung",
+        "value": false
+      },
+      {
+        "text": "Motorisierung",
+        "value": false
+      },
+      {
+        "text": "Verbundenheit",
+        "value": false
+      },
+      {
+        "text": "Verbindlichkeit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Maßnahmen können für sicheres Hashing ergriffen werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Cake hinzufügen",
+        "value": false
+      },
+      {
+        "text": "Salt hinzufügen",
+        "value": true
+      },
+      {
+        "text": "Pepper hinzufügen",
+        "value": true
+      },
+      {
+        "text": "Verfahren mit schlechtem Hardwaredesign verwenden",
+        "value": true
+      },
+      {
+        "text": "Verfahren mit gutem Hardwaredesign verwenden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was ist die Definition von 'Pepper' beim Hashing?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "individueller Zufallswert, der mit Passwort Hash in der DB gespeichert wird",
+        "value": false
+      },
+      {
+        "text": "zufälliger geheimer Wert, der für alle Passwörter konstant ist",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "In welcher Reihenfolge sind die kryptographischen Verfahren in einer 'Cipher Suite' angegeben?",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Schlüsselaustauschalgorithmus",
+        "value": true
+      },
+      {
+        "text": "Authentifizierungsalgorithmus",
+        "value": true
+      },
+      {
+        "text": "Verschlüsselung",
+        "value": true
+      },
+      {
+        "text": "Hashfunktion",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Um was handelt es sich bei einem Heartbleed Angriff im Bezug auf TLS?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Angreifende bringen Opfer und Server dazu, eine alte TLS Version oder anfällige Cipher-Suite zu nutzen",
+        "value": false
+      },
+      {
+        "text": "Softwarefehler, der Auslesen zufälliger Bereiche im RAM ermöglichte",
+        "value": true
+      },
+      {
+        "text": "Angriff auf Padding Verfahren in CBC",
+        "value": false
+      },
+      {
+        "text": "Angriff auf Cipher-Block-Chaining (CBC) Initialisierungsvektor",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Um was handelt es sich bei einem Beast Angriff im Bezug auf TLS?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Angreifende bringen Opfer und Server dazu, eine alte TLS Version oder anfällige Cipher-Suite zu nutzen",
+        "value": false
+      },
+      {
+        "text": "Softwarefehler, der Auslesen zufälliger Bereiche im RAM ermöglichte",
+        "value": false
+      },
+      {
+        "text": "Angriff auf Padding Verfahren in CBC",
+        "value": false
+      },
+      {
+        "text": "Angriff auf Cipher-Block-Chaining (CBC) Initialisierungsvektor",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf TLS und IPSec zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "IPSec sichert eine komplette Verbindung zu einem Host/Netzwerk ab",
+        "value": true
+      },
+      {
+        "text": "IPSec sichert Kommunikation einer Anwendung ab",
+        "value": false
+      },
+      {
+        "text": "TLS sichert eine komplette Verbindung zu einem Host/Netzwerk ab",
+        "value": false
+      },
+      {
+        "text": "TLS sichert Kommunikation einer Anwendung ab",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf eine Packet Filter Firewall zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "analysiert Protokollheader wie MAC, IP, Port mittels statischer Regeln",
+        "value": true
+      },
+      {
+        "text": "separate Regeln für eingehende und ausgehende Kommunikation",
+        "value": true
+      },
+      {
+        "text": "Prüfung des TCP Verbindungszustands für Verbindungen in das Internet",
+        "value": false
+      },
+      {
+        "text": "ändert Konfiguration der Firewall basierend auf Zustand der Verbindung",
+        "value": false
+      },
+      {
+        "text": "erlaubt anwendungsspezifische Prüfung von Inhalten",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf eine Stateful Inspection Firewall zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "analysiert Protokollheader wie MAC, IP, Port mittels statischer Regeln",
+        "value": false
+      },
+      {
+        "text": "separate Regeln für eingehende und ausgehende Kommunikation",
+        "value": false
+      },
+      {
+        "text": "Prüfung des TCP Verbindungszustands für Verbindungen in das Internet",
+        "value": true
+      },
+      {
+        "text": "ändert Konfiguration der Firewall basierend auf Zustand der Verbindung",
+        "value": true
+      },
+      {
+        "text": "erlaubt anwendungsspezifische Prüfung von Inhalten",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was sind die Bestandteile eines IDPS?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Sensoren",
+        "value": true
+      },
+      {
+        "text": "Datenbank",
+        "value": true
+      },
+      {
+        "text": "Cookies",
+        "value": false
+      },
+      {
+        "text": "Analysemodul",
+        "value": true
+      },
+      {
+        "text": "Proxy",
+        "value": false
+      },
+      {
+        "text": "Logmodul",
+        "value": true
+      },
+      {
+        "text": "Aktoren",
+        "value": true
+      },
+      {
+        "text": "Reaktoren",
+        "value": false
+      },
+      {
+        "text": "Selektoren",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Gegenmaßnahmen für DDoS Angriffe zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "keine Lösungsmöglichkeiten im eigenen System",
+        "value": true
+      },
+      {
+        "text": "Abfangen von ungültigen Paketen durch eine Firewall des eigenen Systems",
+        "value": false
+      },
+      {
+        "text": "Aktivierung von temporären Sicherheitsmaßnahmen wie die Lösung eines Captchas",
+        "value": false
+      },
+      {
+        "text": "Ein paar CPU Kerne mehr werden das schon regeln",
+        "value": false
+      },
+      {
+        "text": "Einsatz eines Content Delivery Network",
+        "value": true
+      },
+      {
+        "text": "Reverse Proxy mit Ressourcen Cache vor den Content Server schalten",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Bewertung von Software Schwachstellen ist möglich anhand eines ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "RFC",
+        "value": false
+      },
+      {
+        "text": "RIPE",
+        "value": false
+      },
+      {
+        "text": "CVSS",
+        "value": true
+      },
+      {
+        "text": "CSV",
+        "value": false
+      },
+      {
+        "text": "VCSS",
+        "value": false
+      },
+      {
+        "text": "CSS",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Markiere häufige Softwarefehler, die Schwachstellen in der Sicherheit eines Programms erzeugen können.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Buffer Overflow",
+        "value": true
+      },
+      {
+        "text": "Buffer Underflow",
+        "value": false
+      },
+      {
+        "text": "Verwendung von goto",
+        "value": false
+      },
+      {
+        "text": "Fehlerhafte Integer Behandlung",
+        "value": true
+      },
+      {
+        "text": "Exception Handling",
+        "value": false
+      },
+      {
+        "text": "if-Schleife",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Stack Canaries sind ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "zufällige Werte, die vor die Rücksprungadresse gelegt werden um Stack Buffer Overflows vor dem Rücksprung festzustellen",
+        "value": true
+      },
+      {
+        "text": "feste Werte, die vor die Rücksprungadresse gelegt werden um Stack Buffer Overflows vor dem Rücksprung festzustellen",
+        "value": false
+      },
+      {
+        "text": "eine Vogelart",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Fuzzing ist eine Methode der dynamischen Codeanalyse und bedeutet:",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Analyse des Einflusses durch externe Eingaben",
+        "value": false
+      },
+      {
+        "text": "Alle Kombinationen an Pfaden testen, auch unsinnige",
+        "value": false
+      },
+      {
+        "text": "Automatisiertes Testen mit zufälligen und bewusst non-konform gewählten Werten mit dem Ziel Fehlverhalten auszulösen",
+        "value": true
+      },
+      {
+        "text": "Priorisierung von Mechanismen zur automatischen Untersuchung einzelner Methoden in einer Software",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit welchen (Linux-) Zugriffsrechten kann nur der Besitzer einer Datei nur den Inhalt dieser lesen?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "775",
+        "value": false
+      },
+      {
+        "text": "700",
+        "value": false
+      },
+      {
+        "text": "144",
+        "value": false
+      },
+      {
+        "text": "400",
+        "value": true
+      },
+      {
+        "text": "007",
+        "value": false
+      },
+      {
+        "text": "300",
+        "value": false
+      },
+      {
+        "text": "100",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf die 1st Stage Memory Management Unit zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Abkürzung: 1SMMU",
+        "value": false
+      },
+      {
+        "text": "übersetzt für Prozesse virtuelle in physikalische Speicheradressen",
+        "value": true
+      },
+      {
+        "text": "kann selbst vom System nicht umgangen werden",
+        "value": false
+      },
+      {
+        "text": "verhindert, dass Prozesse direkt auf den Speicher anderer Prozesse zugreifen können",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Sandboxes ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "gibt es nur auf öffentlichen Spielplätzen und in städtischen Kindergärten",
+        "value": false
+      },
+      {
+        "text": "führen Prozesse in einer isolierten Umgebung aus",
+        "value": true
+      },
+      {
+        "text": "verhindern, dass Prozesse direkt auf den Speicher anderer Prozesse zugreifen können",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wann sollte man sich an einem System mit Administratorrechten anmelden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "nur wenn die erweiterten Rechte tatsächlich benötigt werden",
+        "value": true
+      },
+      {
+        "text": "immer, da man ja weiß was man tut",
+        "value": false
+      },
+      {
+        "text": "nur am Vormittag, da die Hacker dann noch schlafen",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Software auf der CPU läuft in verschiedenen Exception Levels. Ordne diese der Reihenfolge nach (von oben nach unten), beginnend bei EL0.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "answers": [
+      {
+        "text": "Anwendungen (User Space)",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem (Kernel Space)",
+        "value": true
+      },
+      {
+        "text": "Hypervisor",
+        "value": true
+      },
+      {
+        "text": "Secure Monitor/Firmware",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welcher Funktionalität kann auf modernen Rechnerarchitekturen eine Anwendung isoliert werden, um die Ausnutzung von Rechten zu vermeiden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Datei- / Ordnerberechtigungen",
+        "value": false
+      },
+      {
+        "text": "Sandbox",
+        "value": true
+      },
+      {
+        "text": "MMU",
+        "value": false
+      },
+      {
+        "text": "Exception Level",
+        "value": false
+      },
+      {
+        "text": "Measured Boot",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welcher Funktionalität kann auf modernen Rechnerarchitekturen der Hardwarezugriff von User von Kernel Prozessen separiert werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Datei- / Ordnerberechtigungen",
+        "value": false
+      },
+      {
+        "text": "Sandbox",
+        "value": false
+      },
+      {
+        "text": "MMU",
+        "value": false
+      },
+      {
+        "text": "Exception Level",
+        "value": true
+      },
+      {
+        "text": "Measured Boot",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Die Authentizität des gestarteten Betriebssystems kann via ... überprüft werden.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Datei- / Ordnerberechtigungen",
+        "value": false
+      },
+      {
+        "text": "Sandbox",
+        "value": false
+      },
+      {
+        "text": "MMU",
+        "value": false
+      },
+      {
+        "text": "Exception Level",
+        "value": false
+      },
+      {
+        "text": "Measured Boot",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Nach DSGVO haben Nutzer*innen ein Recht auf ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Information zur Erhebung und Verarbeitung privater Daten",
+        "value": true
+      },
+      {
+        "text": "Zugriff, Änderung und Löschung der gespeicherten privaten Daten",
+        "value": true
+      },
+      {
+        "text": "Einschränkung und Mitnahme / Übertragbarkeit der gespeicherten privaten Daten",
+        "value": true
+      },
+      {
+        "text": "Widerspruch gegen die Speicherung privater Daten",
+        "value": true
+      },
+      {
+        "text": "Vermeidung automatisierter Entscheidungsfindung basierend auf privaten Daten",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Vorgänge sind Teil des Schritts 'Act' des PDCA Zyklus zur Umsetzung und Verbesserung eines ISMS?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Anforderungen an ISMS analysieren",
+        "value": false
+      },
+      {
+        "text": "Maßnahmen planen",
+        "value": false
+      },
+      {
+        "text": "Maßnahmen umsetzen",
+        "value": false
+      },
+      {
+        "text": "Vorgang reflektieren",
+        "value": true
+      },
+      {
+        "text": "Zielerreichung prüfen",
+        "value": false
+      },
+      {
+        "text": "Folgemaßnahmen anstoßen",
+        "value": true
+      },
+      {
+        "text": "Zielerreichung prüfen",
+        "value": false
+      },
+      {
+        "text": "Verbesserungen an ISMS identifizieren",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche dieser Vorgänge sind Teil des Schritts 'Plan' des PDCA Zyklus zur Umsetzung und Verbesserung eines ISMS?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Anforderungen an ISMS analysieren",
+        "value": true
+      },
+      {
+        "text": "Maßnahmen planen",
+        "value": true
+      },
+      {
+        "text": "Maßnahmen umsetzen",
+        "value": false
+      },
+      {
+        "text": "Vorgang reflektieren",
+        "value": false
+      },
+      {
+        "text": "Zielerreichung prüfen",
+        "value": false
+      },
+      {
+        "text": "Folgemaßnahmen anstoßen",
+        "value": false
+      },
+      {
+        "text": "Zielerreichung prüfen",
+        "value": false
+      },
+      {
+        "text": "Verbesserungen an ISMS identifizieren",
+        "value": false
+      }
+    ]
+  }
+]

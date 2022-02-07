@@ -1155,5 +1155,42 @@
         "value": true
       }
     ]
+  },
+  {
+    "name": "Um welche Art der Rekursion handelt es sich bei der grob beschriebenen Funktion foo?",
+    "description": "fun foo(x) {\n  if abbruchbedingung: return x*2;\n  return x + foo(x+2);\n}",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "primitiv rekursive Funktion",
+        "value": true
+      },
+      {
+        "text": "endrekursive Funktion",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "'type' ist ein x-stelliger Typkonstruktor in ocaml.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "-1",
+        "value": false
+      },
+      {
+        "text": "0",
+        "value": true
+      },
+      {
+        "text": "1",
+        "value": false
+      },
+      {
+        "text": "n",
+        "value": false
+      }
+    ]
   }
 ]

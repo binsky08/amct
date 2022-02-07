@@ -20,13 +20,13 @@
       "uniqueIdentifier": "webappz2"
     },
     {
-      "title": "Kommunikationsnetze und -protokolle - Vorübung (SoSe 21)",
+      "title": "Kommunikationsnetze und -protokolle (SoSe 21)",
       "questions": "assets/tests/kommprot1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "kommprot1"
     },
     {
-      "title": "Software Engineering - Vorübung (SoSe 21)",
+      "title": "Software Engineering (SoSe 21)",
       "questions": "assets/tests/soeng1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "soeng1"
@@ -42,6 +42,12 @@
       "questions": "assets/tests/hkp1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "hkp1"
+    },
+    {
+      "title": "IT-Sicherheit (WiSe 21/22)",
+      "questions": "assets/tests/itsec1.json",
+      "numberOfRandomQuestions": 5,
+      "uniqueIdentifier": "itsec1"
     }
   ]
 }
