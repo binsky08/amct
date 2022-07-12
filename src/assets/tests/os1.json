@@ -1,0 +1,1284 @@
+[
+  {
+    "name": "Bringe die Schichten eines Rechensystems in die richtige Reihenfolge.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": false,
+    "answers": [
+      {
+        "text": "Antivirus-Software",
+        "value": true
+      },
+      {
+        "text": "Compiler / Interpreter / Linker",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem",
+        "value": true
+      },
+      {
+        "text": "Maschinensprache",
+        "value": true
+      },
+      {
+        "text": "Prozessor / Speicher",
+        "value": true
+      },
+      {
+        "text": "Physikalische Geräte",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Art von Betriebssystem kann \"Windows\" sein?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Mainframe-Betriebssystem",
+        "value": false
+      },
+      {
+        "text": "Server-Betriebssystem",
+        "value": true
+      },
+      {
+        "text": "Arbeitsplatzrechner-Betriebssystem",
+        "value": true
+      },
+      {
+        "text": "Echtzeit-Betriebssystem",
+        "value": false
+      },
+      {
+        "text": "Betriebssystem für eingebettete Systeme",
+        "value": true
+      },
+      {
+        "text": "Nerviges Betriebssystem",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche der angegebenen Schichten eines UNIX-Systems ist/sind Teil des sog. Benutzermodus?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Standardhilfsprogramme",
+        "value": true
+      },
+      {
+        "text": "Standardbibliotheken",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was sind Aufgaben des Betriebssystems als Betriebsmittelverwalter?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Schutz aller Betriebsmittel vor unberechtigter Benutzung",
+        "value": true
+      },
+      {
+        "text": "Vermitteln im Falle von Konflikten (z.B. bei gleichzeitigem Zugriff auf Ressourcen)",
+        "value": true
+      },
+      {
+        "text": "Abschirmen des Programmierers vor der Komplexität der Hardware",
+        "value": false
+      },
+      {
+        "text": "Gemeinsame Benutzung \"teurer\" Hardware-Betriebsmittel ermöglichen",
+        "value": true
+      },
+      {
+        "text": "Abrechnung der Kosten der Betriebsmittelnutzung",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Interaktionen zwischen Prozessen können zu zeitkritischen Abläufen führen. Zeitkritische Abläufe ...",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "führen zu einem nicht reproduzierbaren Verhalten",
+        "value": true
+      },
+      {
+        "text": "müssen vermieden werden",
+        "value": true
+      },
+      {
+        "text": "können durch Monitore geschützt werden",
+        "value": true
+      },
+      {
+        "text": "können durch Semaphore geschützt werden",
+        "value": true
+      },
+      {
+        "text": "können durch die Verwendung eines Multiprozessor-Systems geschützt werden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Klassische Synchronisationsprobleme der Interprozesskommunikation werden auch als ... bezeichnet.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Erzeuger-Verbraucher-Problem",
+        "value": true
+      },
+      {
+        "text": "Lieferanten-Problem",
+        "value": false
+      },
+      {
+        "text": "Philosophen-Problem",
+        "value": true
+      },
+      {
+        "text": "Leser-Schreiber-Problem",
+        "value": true
+      },
+      {
+        "text": "Dystopie-Problem",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Eigenschaften hat ein monolithischer Kernel?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Benutzerdienste und Kernel-Dienste werden im selben Adressraum gespeichert",
+        "value": true
+      },
+      {
+        "text": "Benutzerdienste und Kernel-Dienste werden in separaten Adressräumen gespeichert",
+        "value": false
+      },
+      {
+        "text": "leicht zu erweitern",
+        "value": false
+      },
+      {
+        "text": "schwer zu erweitern",
+        "value": true
+      },
+      {
+        "text": "Der Systemkern selbst ist passiv und nur eine Menge von Datenstrukturen und Prozeduren",
+        "value": true
+      },
+      {
+        "text": "Auslagerung großer Teile eines Betriebssystem-Kerns in Benutzerprogramme",
+        "value": false
+      },
+      {
+        "text": "Kommunikation zwischen Anwendung und Hardware des Systems durch Nachrichtenübermittlung (APIs)",
+        "value": false
+      },
+      {
+        "text": "Kommunikation zwischen Anwendung und Hardware über den Systemaufruf",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche Eigenschaften hat ein Microkernel?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Benutzerdienste und Kernel-Dienste werden im selben Adressraum gespeichert",
+        "value": false
+      },
+      {
+        "text": "Benutzerdienste und Kernel-Dienste werden in separaten Adressräumen gespeichert",
+        "value": true
+      },
+      {
+        "text": "leicht zu erweitern",
+        "value": true
+      },
+      {
+        "text": "schwer zu erweitern",
+        "value": false
+      },
+      {
+        "text": "Der Systemkern selbst ist passiv und nur eine Menge von Datenstrukturen und Prozeduren",
+        "value": false
+      },
+      {
+        "text": "Auslagerung großer Teile eines Betriebssystem-Kerns in Benutzerprogramme",
+        "value": true
+      },
+      {
+        "text": "Kommunikation zwischen Anwendung und Hardware des Systems durch Nachrichtenübermittlung (APIs)",
+        "value": true
+      },
+      {
+        "text": "Kommunikation zwischen Anwendung und Hardware über den Systemaufruf",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Durchführung eines Kernaufrufs bei monolithischen Systemen",
+    "description": "Bringe die Schritte in die richtige Reihenfolge, beginne oben.\nBeachte, dass nicht alle zur Verfügung stehenden Schritte genutzt werden müssen.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": true,
+    "answers": [
+      {
+        "text": "Benutzerprogramm beantragt TRAP Aufruf beim Kernel",
+        "value": false
+      },
+      {
+        "text": "Benutzerprogramm springt über TRAP in den Kern und führt den Code selbst aus",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem Code bestimmt die Nummer des angeforderten Dienstes",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem Code lokalisiert Prozedur-Code für Systemaufruf und ruft diesen auf",
+        "value": true
+      },
+      {
+        "text": "Kontrolle wird an das Benutzerprogramm zurückgegeben",
+        "value": true
+      },
+      {
+        "text": "Benutzerprogramm gibt die TRAP Instanz an den Kernel zurück",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf einen Prozess zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Ausführungsgeschwindigkeit eines Prozesses ist gleichmäßig und reproduzierbar",
+        "value": false
+      },
+      {
+        "text": "Ein Prozess besitzt einen privaten Adressraum",
+        "value": true
+      },
+      {
+        "text": "Ein Prozess besitzt konzeptionell einen eigenen virtuellen Prozessor",
+        "value": true
+      },
+      {
+        "text": "Ein Prozess kann mittels SMT gleichzeitig auf mehreren Prozessorkernen aufgeführt werden",
+        "value": false
+      },
+      {
+        "text": "Ein Prozess hat eine Menge von Threads",
+        "value": true
+      },
+      {
+        "text": "Ein Prozess ist ein sich in Ausführung befindliches Programm",
+        "value": true
+      },
+      {
+        "text": "Zu einem Prozess werden Werte wie Register, Speichervariablen, Stack gespeichert",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welches sind reale Prozesszustände?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "arbeitslos",
+        "value": false
+      },
+      {
+        "text": "rechenwillig",
+        "value": true
+      },
+      {
+        "text": "terminiert",
+        "value": true
+      },
+      {
+        "text": "auferstanden",
+        "value": false
+      },
+      {
+        "text": "blockiert",
+        "value": true
+      },
+      {
+        "text": "initiiert",
+        "value": true
+      },
+      {
+        "text": "rechnend",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche der Angaben sind Ziele eines 'guten' Scheduling-Algorithmus?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Hoher Durchsatz",
+        "value": true
+      },
+      {
+        "text": "Hohe Auslastung",
+        "value": true
+      },
+      {
+        "text": "Fairness in der Behandlung aller Aufträge",
+        "value": true
+      },
+      {
+        "text": "Kurze Antwortzeiten bei interaktiven Aufträgen",
+        "value": true
+      },
+      {
+        "text": "Bevorzugung von Antivirensoftware",
+        "value": false
+      },
+      {
+        "text": "Geringer Aufwand für die Bearbeitung des Scheduling-Algorithmus selbst",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was beschreibt preemptives Scheduling?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Eine Strategie, welche die zeitweilige Unterbrechung laufender Jobs erlaubt oder benötigt",
+        "value": true
+      },
+      {
+        "text": "Rechnende Prozesse können suspendiert und später fortgesetzt oder neu begonnen werden",
+        "value": true
+      },
+      {
+        "text": "Rechnende Prozesse sind so lange aktiv, bis sie sich blockieren oder beenden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was sind non-preemptive Scheduling Verfahren?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "First-Come-First-Served",
+        "value": true
+      },
+      {
+        "text": "Last-In-First-Out",
+        "value": true
+      },
+      {
+        "text": "Never-In-Never-Out",
+        "value": false
+      },
+      {
+        "text": "Round-Robin",
+        "value": false
+      },
+      {
+        "text": "Shortest-Job-First",
+        "value": true
+      },
+      {
+        "text": "unterbrechendes Prioritäts-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Mehrschlangen-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Echtzeit-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Prioritäts-Scheduling",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Soll mittels 'nice' die Prozesspriorität verschlechtert werden, muss der nice-Wert ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "erhöht werden",
+        "value": true
+      },
+      {
+        "text": "verringert werden",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Auf welches Scheduling Verfahren trifft folgende Beschreibung zu?",
+    "description": "Jeder rechenwillige Prozess erhält den Prozessor für eine feste Zeitdauer q, auch Quantum genannt.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First-Come-First-Served",
+        "value": false
+      },
+      {
+        "text": "Last-In-First-Out",
+        "value": false
+      },
+      {
+        "text": "Never-In-Never-Out",
+        "value": false
+      },
+      {
+        "text": "Round-Robin",
+        "value": true
+      },
+      {
+        "text": "Shortest-Job-First",
+        "value": false
+      },
+      {
+        "text": "unterbrechendes Prioritäts-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Mehrschlangen-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Echtzeit-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Prioritäts-Scheduling",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Auf welches Scheduling Verfahren trifft folgende Beschreibung zu?",
+    "description": "Der Algorithmus sichert die kürzeste mittlere Wartezeit für alle Aufträge.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First-Come-First-Served",
+        "value": false
+      },
+      {
+        "text": "Last-In-First-Out",
+        "value": false
+      },
+      {
+        "text": "Never-In-Never-Out",
+        "value": false
+      },
+      {
+        "text": "Round-Robin",
+        "value": false
+      },
+      {
+        "text": "Shortest-Job-First",
+        "value": true
+      },
+      {
+        "text": "unterbrechendes Prioritäts-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Mehrschlangen-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Echtzeit-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Prioritäts-Scheduling",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Auf welches Scheduling Verfahren trifft folgende Beschreibung zu?",
+    "description": "Prozesse werden statisch klassifiziert als einer bestimmten Gruppe zugehörig (z.B. interaktiv, batch).\nAlle rechenwilligen Prozesse einer bestimmten Klasse werden in einer eigenen Ready Queue verwaltet.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First-Come-First-Served",
+        "value": false
+      },
+      {
+        "text": "Last-In-First-Out",
+        "value": false
+      },
+      {
+        "text": "Never-In-Never-Out",
+        "value": false
+      },
+      {
+        "text": "Round-Robin",
+        "value": false
+      },
+      {
+        "text": "Shortest-Job-First",
+        "value": false
+      },
+      {
+        "text": "unterbrechendes Prioritäts-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Mehrschlangen-Scheduling",
+        "value": true
+      },
+      {
+        "text": "Echtzeit-Scheduling",
+        "value": false
+      },
+      {
+        "text": "Prioritäts-Scheduling",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Zwei nebenläufige Prozesse heißen .... oder ...., wenn es ein Betriebsmittel gibt, das sie gemeinsam (lesend und schreibend) benutzen.",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "im Konflikt zueinander stehend",
+        "value": true
+      },
+      {
+        "text": "parallel rechnend",
+        "value": false
+      },
+      {
+        "text": "überlappend",
+        "value": true
+      },
+      {
+        "text": "Eltern-Kind-Prozesse",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Folgen von Lese/Schreib-Operationen der verschiedenen Prozesse heißen ...., wenn die Endzustände der Betriebsmittel (Endergebnisse der Datenbereiche) abhängig von der zeitlichen Reihenfolge der Lese/Schreib-Operationen sind.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "rage conditions",
+        "value": false
+      },
+      {
+        "text": "race conditions",
+        "value": true
+      },
+      {
+        "text": "ungeordnete Operationen",
+        "value": false
+      },
+      {
+        "text": "First-Come-First-Served",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Zur Lösung des wechselseitigen Ausschlusses sind notwendig:",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Sperrfunktion: Erlaubt nur einem Prozess das Betreten des kritischen Bereichs",
+        "value": true
+      },
+      {
+        "text": "Freigabefunktion: Signalisiert Verlassen des kritischen Bereichs",
+        "value": true
+      },
+      {
+        "text": "Atomare Funktionen: Funktionen können während ihrer Ausführung nicht unterbrochen werden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welche sind gute Optionen zum wechselseitigen Ausschluss mit aktivem Warten?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Sperren aller Unterbrechungen",
+        "value": false
+      },
+      {
+        "text": "Algorithmus von Peterson",
+        "value": true
+      },
+      {
+        "text": "Test-and-Set - Prozessor-Instruktion",
+        "value": true
+      },
+      {
+        "text": "Sperrvariablen",
+        "value": false
+      },
+      {
+        "text": "Striktes Alternieren",
+        "value": false
+      },
+      {
+        "text": "Semaphore",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Die folgende Beschreibung passt zu welchem Kriterium zur korrekten Lösung des wechselseitigen Ausschlusses?",
+    "description": "zu jedem Zeitpunkt darf höchstens ein Prozess in seinen kritischen Bereich",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Mutual exclusion",
+        "value": true
+      },
+      {
+        "text": "Begrenztes warten",
+        "value": false
+      },
+      {
+        "text": "Fortschritt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Die folgende Beschreibung passt zu welchem Kriterium zur korrekten Lösung des wechselseitigen Ausschlusses?",
+    "description": "befindet sich kein Prozess im kritischen Bereich, und gibt es andererseits Prozesse,\ndie ihren kritischen Bereich betreten möchten, so hängt die Wahl des nächsten Kandidaten \nnur von den Kandidaten ab und fällt in endlicher Zeit",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Mutual exclusion",
+        "value": false
+      },
+      {
+        "text": "Begrenztes warten",
+        "value": false
+      },
+      {
+        "text": "Fortschritt",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Die folgende Beschreibung passt zu welchem Kriterium zur korrekten Lösung des wechselseitigen Ausschlusses?",
+    "description": "für einen Prozess, der den kritischen Bereich betreten möchte, muss eine obere Grenze für die Zeit,\ndie er warten muss, angegeben werden können",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Mutual exclusion",
+        "value": false
+      },
+      {
+        "text": "Begrenztes warten",
+        "value": true
+      },
+      {
+        "text": "Fortschritt",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Semaphore zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Das Semaphor-Konzept basiert auf binären Funktionen",
+        "value": false
+      },
+      {
+        "text": "Das Semaphor-Konzept basiert auf atomaren Funktionen",
+        "value": true
+      },
+      {
+        "text": "Zu einer Semaphor wird eine Warteschlange assoziiert",
+        "value": true
+      },
+      {
+        "text": "FIFO-Warteschlange verwaltet rechnende Prozesse, um endliche Wartezeit zu garantieren",
+        "value": false
+      },
+      {
+        "text": "Durch eine signal-Operation wird ein Prozess wieder geweckt",
+        "value": true
+      },
+      {
+        "text": "Durch eine signal-Operation wird ein Prozess wieder schlafen gelegt",
+        "value": false
+      },
+      {
+        "text": "Prozess, der den kritischen Bereich verlässt, wird schlafen gelegt",
+        "value": false
+      },
+      {
+        "text": "Bei wechselseitigem Ausschluss ist der Anfangswert 1 (binäre Semaphore)",
+        "value": true
+      },
+      {
+        "text": "Bei wechselseitigem Ausschluss ist der Anfangswert 0 (atomare Semaphore)",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Bringe den Algorithmus für das wechselseitige Ausschlussproblem mit Semaphoren in die richtige Reihenfolge.",
+    "description": "Gehe davon aus, dass sich keine 'Bereiche' außerhalb der Schleife befinden\nund der unkritische Bereich erst nach dem kritischen ausgeführt wird.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": false,
+    "answers": [
+      {
+        "text": "Init(s,1)",
+        "value": true
+      },
+      {
+        "text": "repeat",
+        "value": true
+      },
+      {
+        "text": "wait(s);",
+        "value": true
+      },
+      {
+        "text": "Kritischer Bereich;",
+        "value": true
+      },
+      {
+        "text": "signal(s);",
+        "value": true
+      },
+      {
+        "text": "Unkritischer Bereich;",
+        "value": true
+      },
+      {
+        "text": "until FALSE;",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Für welche der Synchronisationsprobleme gibt es eine Lösungsmöglichkeit mit Semaphoren?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Erzeuger-Verbraucher-Problem",
+        "value": true
+      },
+      {
+        "text": "Lieferanten-Problem",
+        "value": false
+      },
+      {
+        "text": "Philosophen-Problem",
+        "value": true
+      },
+      {
+        "text": "Leser-Schreiber-Problem",
+        "value": true
+      },
+      {
+        "text": "Dystopie-Problem",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Was trifft auf Signalisierung bei der Prozesskommunikation unter UNIX zu?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Nicht-rechnende Prozesse können nur Signale von rechnenden Prozessen empfangen",
+        "value": true
+      },
+      {
+        "text": "Rechnende Prozesse können Signale senden und empfangen",
+        "value": true
+      },
+      {
+        "text": "Rechnende Prozesse können Signale nur senden",
+        "value": false
+      },
+      {
+        "text": "Ein Prozess kann festlegen, dass er bestimmte Signale selbst durch einen Signal-Handler behandeln oder ignorieren will",
+        "value": true
+      },
+      {
+        "text": "UNIX unterscheidet drei Arten von Signalen",
+        "value": false
+      },
+      {
+        "text": "Ein Prozess darf Signale an sich selbst senden",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Auf welchen UNIX Dienst zum Nachrichtenaustausch trifft folgende Beschreibung zu?",
+    "description": "mit TCP/IP eingeführtes Konzept zur allgemeinen, rechnerübergreifenden, bidirektionalen,\nnachrichtenorientierten Interprozesskommunikation",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Pipes",
+        "value": false
+      },
+      {
+        "text": "Named Pipes oder FIFOs",
+        "value": false
+      },
+      {
+        "text": "Message Queues",
+        "value": false
+      },
+      {
+        "text": "Sockets",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Auf welchen UNIX Dienst zum Nachrichtenaustausch trifft folgende Beschreibung zu?",
+    "description": "Vererbung der Kommunikationsendpunkte durch fork()",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Pipes",
+        "value": true
+      },
+      {
+        "text": "Named Pipes oder FIFOs",
+        "value": false
+      },
+      {
+        "text": "Message Queues",
+        "value": false
+      },
+      {
+        "text": "Sockets",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Auf welchen UNIX Dienst zum Nachrichtenaustausch trifft folgende Beschreibung zu?",
+    "description": "ein komplexes, gemeinsam benutztes Objekt zum Austausch typisierter Nachrichten zwischen potentiell\nbeliebig vielen Sende- und Empfangs-Prozessen",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Pipes",
+        "value": false
+      },
+      {
+        "text": "Named Pipes oder FIFOs",
+        "value": false
+      },
+      {
+        "text": "Message Queues",
+        "value": true
+      },
+      {
+        "text": "Sockets",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Auf welchen UNIX Dienst zum Nachrichtenaustausch trifft folgende Beschreibung zu?",
+    "description": "besitzt einen Namen aus dem Dateinamensraum und einen Seiten-Puffer im Arbeitsspeicher",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Pipes",
+        "value": false
+      },
+      {
+        "text": "Named Pipes oder FIFOs",
+        "value": true
+      },
+      {
+        "text": "Message Queues",
+        "value": false
+      },
+      {
+        "text": "Sockets",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Erzeuge einen möglichen Deadlock!",
+    "description": "Gehe davon aus, dass beide Prozesse erst dann weiter arbeiten können,\nwenn sie etwas eingescanntes gedruckt haben.\nBeginne damit, dass A den Drucker anfordert.",
+    "type": "dropList",
+    "orientation": "vertical",
+    "useDisabled": false,
+    "answers": [
+      {
+        "text": "Prozess A fordert Drucker an",
+        "value": true
+      },
+      {
+        "text": "Prozess B fordert Scanner an",
+        "value": true
+      },
+      {
+        "text": "Prozess A fordert Scanner an, arbeitet sobald möglich und gibt beide Geräte wieder frei",
+        "value": true
+      },
+      {
+        "text": "Prozess B fordert Drucker an, arbeitet sobald möglich und gibt beide Geräte wieder frei",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Der 'Banker's Algorithmus' vermeidet Deadlocks, in dem er ...",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "ein Spooling-System als Auftragsqueue einführt",
+        "value": false
+      },
+      {
+        "text": "Anforderungen zurückstellt, die das System in einen unsicheren Zustand überführen würden",
+        "value": true
+      },
+      {
+        "text": "eine geordnete Betriebsmittelbenutzung veranlasst",
+        "value": false
+      },
+      {
+        "text": "sicherstellt, dass Prozessen während der Ausführung zugeteilte Betriebsmittel entzogen werden können",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Technik zur Deadlock-Behebung nach dessen Auftreten benötigt sogenannte Checkpoints?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Deadlock-Behebung durch Unterbrechung",
+        "value": false
+      },
+      {
+        "text": "Deadlock-Behebung durch teilweise Wiederholung",
+        "value": true
+      },
+      {
+        "text": "Deadlock-Behebung durch Prozessabbruch",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welche Bedingungen müssen zur Erzeugung eines Deadlocks erfüllt sein?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Bedingung des wechselseitigen Ausschlusses",
+        "value": true
+      },
+      {
+        "text": "Bedingung der geordneten Betriebsmittelbenutzung",
+        "value": false
+      },
+      {
+        "text": "Belegungs- / Anforderungs-Bedingung",
+        "value": true
+      },
+      {
+        "text": "Ununterbrechbarkeitsbedingung",
+        "value": true
+      },
+      {
+        "text": "Zyklische Wartebedingung",
+        "value": true
+      },
+      {
+        "text": "Zyklische Entzugsbedingung",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welcher der Techniken kann das Relokationsproblem der statischen Speicherverwaltung am Schlechtesten gelöst werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Loader addiert die Ladeadresse auf alle Adressen gemäß eines vom Binder erstellten Adressverzeichnisses des Programms",
+        "value": false
+      },
+      {
+        "text": "Ausstattung der CPU mit zwei zusätzlichen Registern, die Basisregister und Grenzregister genannt werden",
+        "value": false
+      },
+      {
+        "text": "Verschieben von Prozessen vom Hauptspeicher auf Platte und zurück",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Wie können dynamische Speicheranforderungen behandelt werden?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "text": "Belegen angrenzender 'Löcher' im Speicherbereich, falls vorhanden",
+        "value": true
+      },
+      {
+        "text": "Verschiebung von anderen Prozessen, falls möglich",
+        "value": true
+      },
+      {
+        "text": "Auslagern von anderen Prozessen",
+        "value": true
+      },
+      {
+        "text": "Bei der ersten Speicherbelegung vorab zusätzlichen Speicherplatz allokieren",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Mit Hilfe welches Algorithmus kann sog. externe Fragmentierung vermieden werden?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Speicherverwaltung mit Bitmaps",
+        "value": false
+      },
+      {
+        "text": "Speicherverwaltung mit verketteten Listen",
+        "value": false
+      },
+      {
+        "text": "Speicherverwaltung mit dem Buddy-System",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welchem Algorithmus für die Speicheralloziierung entspricht die folgende Beschreibung?",
+    "description": "Durchsuche die gesamte Liste, wähle das größte freie Segment und spalte dieses.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First Fit",
+        "value": false
+      },
+      {
+        "text": "Rotating First Fit",
+        "value": false
+      },
+      {
+        "text": "Best Fit",
+        "value": false
+      },
+      {
+        "text": "Worst Fit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Welchem Algorithmus für die Speicheralloziierung entspricht die folgende Beschreibung?",
+    "description": "Beginne Suche nach neuem freien Segment an der nachfolgenden Stelle, \nan der bei letzten Durchlauf ein Segment belegt wurde.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First Fit",
+        "value": false
+      },
+      {
+        "text": "Rotating First Fit",
+        "value": true
+      },
+      {
+        "text": "Best Fit",
+        "value": false
+      },
+      {
+        "text": "Worst Fit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welchem Algorithmus für die Speicheralloziierung entspricht die folgende Beschreibung?",
+    "description": "Durchsuche Freiliste, bis ein freies Segment hinreichender Größe gefunden ist.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First Fit",
+        "value": true
+      },
+      {
+        "text": "Rotating First Fit",
+        "value": false
+      },
+      {
+        "text": "Best Fit",
+        "value": false
+      },
+      {
+        "text": "Worst Fit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welchem Algorithmus für die Speicheralloziierung entspricht die folgende Beschreibung?",
+    "description": "Durchsuche die gesamte Liste, wähle das kleinste für die Anforderung gerade ausreichende freie Segment \nund spalte dieses.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "First Fit",
+        "value": false
+      },
+      {
+        "text": "Rotating First Fit",
+        "value": false
+      },
+      {
+        "text": "Best Fit",
+        "value": true
+      },
+      {
+        "text": "Worst Fit",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Welcher der Ansätze beschreibt 'virtuellen Speicher' im Bezug auf folgendes Problem?",
+    "description": "Die Größe eines einzelnen Prozesses kann die Größe des insgesamt zur Verfügung stehenden Speichers übersteigen.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Betriebssystem hält 'gerade in Benutzung' befindliche Teile eines Programms im Hauptspeicher, den Rest im Hintergrundspeicher.",
+        "value": true
+      },
+      {
+        "text": "Betriebssystem hält 'gerade nicht in Benutzung' befindliche Teile eines Programms im Hauptspeicher, den Rest im Hintergrundspeicher.",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Wobei handelt es sich bei Paging?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "n-dimensionaler virtueller Speicher",
+        "value": false
+      },
+      {
+        "text": "dreidimensionaler virtueller Speicher",
+        "value": false
+      },
+      {
+        "text": "zweidimensionaler virtueller Speicher",
+        "value": false
+      },
+      {
+        "text": "eindimensionaler virtueller Speicher",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Was bedeutet MMU im Bezug auf Betriebssysteme?",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Machine Managed Update",
+        "value": false
+      },
+      {
+        "text": "Multi Million Bit Uplink",
+        "value": false
+      },
+      {
+        "text": "Master Mind Universe",
+        "value": false
+      },
+      {
+        "text": "Memory Management Unit",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Die von den Instruktionen eines Programms generierten Adressen werden ... genannt.",
+    "type": "radio",
+    "answers": [
+      {
+        "text": "Seiten / Pages",
+        "value": false
+      },
+      {
+        "text": "Seitenrahmen / Page Frames",
+        "value": false
+      },
+      {
+        "text": "Seitenfehler / Page Faults",
+        "value": false
+      },
+      {
+        "text": "Zeiger / Pointer",
+        "value": false
+      },
+      {
+        "text": "virtuelle Adressen",
+        "value": true
+      },
+      {
+        "text": "MMU",
+        "value": false
+      },
+      {
+        "text": "Transfer Units",
+        "value": false
+      }
+    ]
+  }
+]

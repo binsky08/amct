@@ -48,6 +48,12 @@
       "questions": "assets/tests/itsec1.json",
       "numberOfRandomQuestions": 5,
       "uniqueIdentifier": "itsec1"
+    },
+    {
+      "title": "Betriebssysteme (SoSe 22)",
+      "questions": "assets/tests/os1.json",
+      "numberOfRandomQuestions": 5,
+      "uniqueIdentifier": "os1"
     }
   ]
 }
