@@ -110,3 +110,20 @@ button[mat-raised-button] {
 .dropList.cdk-drop-list-dragging .dropListBox:not(.cdk-drag-placeholder) {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
+
+mat-card-content pre {
+  white-space: pre-wrap;
+}
+
+::ng-deep .mat-radio-label {
+  white-space: normal!important;
+}
+
+::ng-deep .mat-checkbox-layout {
+  white-space: normal!important;
+  margin-top: 5px !important;
+}
+
+.md-line-height {
+  line-height: 55px;
+}

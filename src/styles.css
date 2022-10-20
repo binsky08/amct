@@ -50,3 +50,8 @@ section div p {
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 1500px) {
+  .mat-card {
+    width: 80%;
+  }
+}
