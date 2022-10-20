@@ -123,3 +123,7 @@ mat-card-content pre {
   white-space: normal!important;
   margin-top: 5px !important;
 }
+
+.md-line-height {
+  line-height: 55px;
+}
